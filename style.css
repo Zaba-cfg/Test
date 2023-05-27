@@ -70,13 +70,6 @@ header {
     width: 15rem;
 }
 
-/* menú hamburguesa */
-
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-}
-
 .titulos {
     padding: 1.5rem;
     color: white;
@@ -84,6 +77,8 @@ header {
     text-align: center;
     justify-content: center;
 }
+
+/* Footer */
 
 footer {
     background-color: #1c1c1c;
@@ -117,11 +112,24 @@ footer div i {
     color: lightblue;
 }
 
+/* Menú hamburguesa */
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/* Slider */
+
+.slider {
+    display: none;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 550px) {
 
-    /* Media queries para menú hamburguesa */
+    /* Menú hamburguesa */
 
     .abrir-menu,
     .cerrar-menu {
@@ -150,6 +158,7 @@ footer div i {
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        z-index: 99;
         transform: translateX(100%);
     }
 
@@ -167,5 +176,28 @@ footer div i {
     .navbar-item-link {
         color: #ececec;
         transition: color 0.3s ease;
+    }
+
+    /* Slider */
+
+    .slider {
+        aspect-ratio: 10 / 16;
+        height: auto;
+        width: 100%;
+        border: solid #1c1c1c 2px;
+        border-radius: 4px;
+        position: relative;
+        display: flex;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider img {
+        height: 60%;
+        width: auto;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        scroll-snap-align: center;
     }
 }
