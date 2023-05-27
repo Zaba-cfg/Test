@@ -34,26 +34,14 @@ fetch("productos.json")
 
 // Menú hamburguesa
 
-const menu = document.querySelector(".navbar-list")
-const menuItems = document.querySelectorAll(".navbar-item-link")
-const hamburger = document.querySelector(".hamburger")
-const closeIcon = document.querySelector(".closeIcon")
-const menuIcon = document.querySelector(".menuIcon")
+const navbar = document.querySelector("#navbar")
+const abrir = document.querySelector("#abrir")
+const cerrar = document.querySelector("#cerrar")
 
-function toggleMenu() {
-   if (menu.classList.contains("showMenu")) {
-      menu.classList.remove("showMenu")
-      closeIcon.style.display = "none"
-      menuIcon.style.display = "block"
-   } else {
-      menu.classList.add("showMenu")
-      closeIcon.style.display = "block"
-      menuIcon.style.display = "none"
-   }
-}
+abrir.addEventListener("click", () => {
+   navbar.classList.add("visible")
+})
 
-hamburger.addEventListener("click", toggleMenu)
-
-menuItems.forEach(function (menuItem) {
-   menuItem.addEventListener("click", toggleMenu)
+cerrar.addEventListener("click", () => {
+   navbar.classList.remove("visible")
 })
