@@ -5,17 +5,21 @@
     font-family: sans-serif;
 }
 
+html {
+    background-color: #282828;
+}
+
 /* Navbar */
 
 .logo {
-    max-width: 5rem;
+    max-width: 4rem;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
     background-color: #1c1c1c;
 }
 
@@ -31,18 +35,18 @@ header {
 
 .navbar-item-link {
     text-decoration: none;
-    color: #ececec;
+    color: rgb(175, 175, 175);
 }
 
 .navbar-item-link:focus {
-    color: rgb(161, 161, 161);
+    color: #ececec;
 }
 
 /* Cards */
 
 .productos-img {
-    width: 200px;
-    height: 300px;
+    width: auto;
+    height: auto;
 }
 
 .productos-card {
@@ -62,20 +66,62 @@ header {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    width: 202px;
+    margin: 2rem;
+    width: 15rem;
 }
+
+/* menú hamburguesa */
 
 .abrir-menu,
 .cerrar-menu {
     display: none;
 }
 
-/* Media */
+.titulos {
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #1c1c1c;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+footer div i {
+    color: #ececec;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bi-whatsapp:hover {
+    color: lightgreen;
+}
+
+.bi-instagram:hover {
+    color: lightsalmon;
+}
+
+.bi-tiktok:hover {
+    color: violet;
+}
+
+.bi-facebook:hover {
+    color: lightblue;
+}
+
+/* Media queries */
 
 @media screen and (max-width: 550px) {
 
-    /* Media queries para menú hamburger */
+    /* Media queries para menú hamburguesa */
 
     .abrir-menu,
     .cerrar-menu {
