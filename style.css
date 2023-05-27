@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: grey;
+}
+
+.navbar-list {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-item {
+    list-style: none;
+}
+
+.navbar-item-link {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-item-link:focus {
+    color: white;
+}
+
+/* Cards */
+
+.productos-img {
+    width: 200px;
+    height: 300px;
+}
+
+.productos-card {
+    padding: 10px;
+}
+
+#contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos {
+    color: white;
+    border: #191717 solid 1px;
+    background-color: #191717;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 202px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Media */
+
+@media screen and (max-width: 430px) {
+
+    /* Media queries para menú hamburger */
+
+    .navbar-item-link {
+        display: block;
+        margin: 2rem 4rem;
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar-item-link:hover {
+        text-decoration: underline;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        top: .4rem;
+        right: .4rem;
+        padding: 4px;
+        border: none;
+        color: rgb(84, 84, 84);
+        background: none;
+        cursor: pointer;
+    }
+
+    .closeIcon {
+        display: none;
+        color: black;
+    }
+
+    .navbar-list {
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: black;
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+}
