@@ -1,7 +1,6 @@
-// Obtener el contenedor donde se mostrarán los detalles de los productos
+// Contenedor de productos
 
 let contenedorProductos = document.getElementById("contenedorProductos")
-
 // Hacer la solicitud utilizando fetch para obtener el archivo JSON de productos
 
 fetch("productos.json")
@@ -32,16 +31,22 @@ fetch("productos.json")
       console.log("Error al obtener los datos de productos:", error)
    })
 
-// Menú hamburguesa
+// Mismo código pero para el slider
 
-const navbar = document.querySelector("#navbar")
-const abrir = document.querySelector("#abrir")
-const cerrar = document.querySelector("#cerrar")
+let sliderContent = document.getElementById("slider-content")
 
-abrir.addEventListener("click", () => {
-   navbar.classList.add("visible")
-})
-
-cerrar.addEventListener("click", () => {
-   navbar.classList.remove("visible")
-})
+fetch("productos.json")
+   .then(function (response) {
+      return response.json()
+   })
+   .then(function (data) {
+      data.forEach(function (producto) {
+         let productoHTML = `
+               <img src=${producto.img}>
+         `
+         sliderContent.innerHTML += productoHTML
+      })
+   })
+   .catch(function (error) {
+      console.log("Error al obtener los datos de productos:", error)
+   })

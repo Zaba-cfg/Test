@@ -122,7 +122,27 @@ footer div i {
 /* Slider */
 
 .slider {
-    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.slider-content {
+    aspect-ratio: 20 / 4;
+    height: auto;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.slider-content img {
+    height: auto;
+    width: auto;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    scroll-snap-align: center;
 }
 
 /* Media queries */
@@ -180,24 +200,18 @@ footer div i {
 
     /* Slider */
 
-    .slider {
-        aspect-ratio: 10 / 16;
-        height: auto;
-        width: 100%;
-        border: solid #1c1c1c 2px;
-        border-radius: 4px;
-        position: relative;
-        display: flex;
-        overflow: scroll;
-        scroll-snap-type: x mandatory;
+    .slider-content {
+        aspect-ratio: 10/10;
+        overflow-x: scroll;
     }
 
-    .slider img {
-        height: 60%;
-        width: auto;
-        left: 0;
-        position: sticky;
-        object-fit: cover;
-        scroll-snap-align: center;
+    /* Ocultar scroll en firefox y otros navegadores */
+
+    .slider-content {
+        scrollbar-width: none;
+    }
+
+    .slider-content::-webkit-scrollbar {
+        width: 0px;
     }
 }
