@@ -33,7 +33,7 @@ fetch("productos.json")
 
 // Mismo código pero para el slider
 
-let sliderContent = document.getElementById("slider-content")
+let slider = document.getElementById("slider")
 
 fetch("productos.json")
    .then(function (response) {
@@ -44,7 +44,7 @@ fetch("productos.json")
          let productoHTML = `
                <img src=${producto.img}>
          `
-         sliderContent.innerHTML += productoHTML
+         slider.innerHTML += productoHTML
       })
    })
    .catch(function (error) {
