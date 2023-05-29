@@ -7,6 +7,7 @@
 
 html {
     background-color: #282828;
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -125,6 +126,77 @@ footer div i {
     display: none;
 }
 
+/* Carousel */
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 120rem;
+    padding: 2rem;
+    color: #393939;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: #191717;
+    overflow: hidden;
+}
+
+.grande {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #393939;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #1c1c1c;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+.imgCarousel {
+    width: calc(100% / 2 - 2rem);
+    border-radius: 5rem;
+    padding: 4rem;
+    height: 40rem;
+    color: #393939;
+    transition: all 0.4s ease;
+    background-color: #1c1c1c;
+}
+
+.puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem 1rem 0;
+    color: #393939;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    list-style: none;
+    cursor: pointer;
+    background-color: #ececec;
+}
+
+.punto.activo {
+    background-color: lightblue;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 550px) {
@@ -208,5 +280,15 @@ footer div i {
 
     .slider::-webkit-scrollbar {
         width: 0px;
+    }
+
+    /* Ocultar carousel en mobile */
+
+    .carousel {
+        display: none;
+    }
+
+    .puntos {
+        display: none;
     }
 }
