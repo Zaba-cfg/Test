@@ -16,11 +16,29 @@ html {
     max-width: 4rem;
 }
 
+a {
+    text-decoration: none;
+    color: #ececec;
+}
+
+.volver {
+    z-index: 98;
+    position: fixed;
+    border: solid #ececec 1px;
+    padding: .9rem 1rem .8rem 1rem;
+    border-radius: 50%;
+    background-color: #282828;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+}
+
 header {
+    z-index: 98;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1.3rem 3rem 1.3rem 3rem;
     background-color: #1c1c1c;
 }
 
@@ -35,11 +53,10 @@ header {
 }
 
 .navbar-item-link {
-    text-decoration: none;
     color: rgb(175, 175, 175);
 }
 
-.navbar-item-link:focus {
+.navbar-item-link:hover {
     color: #ececec;
 }
 
@@ -55,6 +72,18 @@ header {
 }
 
 #contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contenedorMates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contenedorTermos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -190,11 +219,11 @@ main section {
     border-radius: 1rem;
     list-style: none;
     cursor: pointer;
-    background-color: #ececec;
+    background-color: black;
 }
 
 .punto.activo {
-    background-color: lightblue;
+    background-color: #393939;
 }
 
 /* Media queries */

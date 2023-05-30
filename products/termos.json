@@ -1,0 +1,30 @@
+[
+   {
+      "id": 2,
+      "nombre": "BioShock Infinite",
+      "precio": 395.99,
+      "categoria": "FPS | Historia",
+      "img": "https://cdn-products.eneba.com/resized-products/wdjzivj9h5w0k6anz2q7_350x200_1x-0.jpg"
+   },
+   {
+      "id": 3,
+      "nombre": "Far Cry 3",
+      "precio": 999.99,
+      "categoria": "FPS | Mundo abierto",
+      "img": "https://cdn-products.eneba.com/resized-products/clqp8A2_350x200_1x-0.jpg"
+   },
+   {
+      "id": 4,
+      "nombre": "Counter-Strike:Source",
+      "precio": 129.99,
+      "categoria": "FPS | Juego de disparos táctico",
+      "img": "https://cdn-products.eneba.com/resized-products/I82ReTa_350x200_1x-0.jpg"
+   },
+   {
+      "id": 14,
+      "nombre": "Hunt: Showdown",
+      "precio": 1099.99,
+      "categoria": "FPS | Mundo abierto",
+      "img": "https://cdn-products.eneba.com/resized-products/tKQx1Pc7NX9i-HSXWyggOU3LbTXUc0ydHTyRpZxDSTA_350x200_1x-0.jpeg"
+   }
+]

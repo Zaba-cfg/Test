@@ -1,9 +1,9 @@
 // Contenedor de productos
 
-let contenedorProductos = document.getElementById("contenedorProductos")
+let contenedorMates = document.getElementById("contenedorMates")
 // Hacer la solicitud utilizando fetch para obtener el archivo JSON de productos
 
-fetch("./products/productos.json")
+fetch("./products/mates.json")
    .then(function (response) {
       return response.json()
    })
@@ -24,27 +24,40 @@ fetch("./products/productos.json")
 
          // Agregar el HTML al contenedor de productos utilizando innerHTML
 
-         contenedorProductos.innerHTML += productoHTML
+         contenedorMates.innerHTML += productoHTML
       })
    })
    .catch(function (error) {
       console.log("Error al obtener los datos de productos:", error)
    })
 
-// Mismo código pero para el slider
+// Contenedor de productos
 
-let slider = document.getElementById("slider")
+let contenedorTermos = document.getElementById("contenedorTermos")
+// Hacer la solicitud utilizando fetch para obtener el archivo JSON de productos
 
-fetch("./products/productos.json")
+fetch("./products/termos.json")
    .then(function (response) {
       return response.json()
    })
    .then(function (data) {
+      // Recorrer el array de productos y mostrar los detalles
+
       data.forEach(function (producto) {
+         // Crear el HTML para los detalles del producto
+
          let productoHTML = `
-               <img src=${producto.img}>
+         <div class="productos">
+            <img class="productos-img" src=${producto.img}>
+            <h3 class="productos-card">${producto.nombre}</h3>
+            <h4 class="productos-card">${producto.categoria}</h4>
+            <h5 class="productos-card">$${producto.precio}</h5>
+         </div>
          `
-         slider.innerHTML += productoHTML
+
+         // Agregar el HTML al contenedor de productos utilizando innerHTML
+
+         contenedorTermos.innerHTML += productoHTML
       })
    })
    .catch(function (error) {

@@ -1,0 +1,58 @@
+[
+   {
+      "id": 13,
+      "nombre": "Red Dead Redemption II",
+      "precio": 2499.99,
+      "categoria": "Mundo abierto | Historia",
+      "img": "https://cdn-products.eneba.com/resized-products/_7wUozXpyFnXkvmSjx3oUA0EF0H7PQ8T8TLgEab-GrI_350x200_1x-0.jpeg"
+   },
+   {
+      "id": 14,
+      "nombre": "Hunt: Showdown",
+      "precio": 1099.99,
+      "categoria": "FPS | Mundo abierto",
+      "img": "https://cdn-products.eneba.com/resized-products/tKQx1Pc7NX9i-HSXWyggOU3LbTXUc0ydHTyRpZxDSTA_350x200_1x-0.jpeg"
+   },
+   {
+      "id": 15,
+      "nombre": "Cyberpunk 2077",
+      "precio": 2199.99,
+      "categoria": "Mundo abierto | Historia",
+      "img": "https://cdn-products.eneba.com/resized-products/e4F2hNGTi5VjMHS29as0dZaQpCPfP6jbQzhPu_GAQ_U_350x200_1x-0.jpeg"
+   },
+   {
+      "id": 16,
+      "nombre": "No Man's Sky",
+      "precio": 2299.99,
+      "categoria": "Mundo abierto | Historia | Espacio",
+      "img": "https://cdn-products.eneba.com/resized-products/ppt92xozmp6fcaxfce0h_350x200_1x-0.jpg"
+   },
+   {
+      "id": 8,
+      "nombre": "Fallout 4",
+      "precio": 799.99,
+      "categoria": "Mundo abierto | RPG",
+      "img": "https://cdn-products.eneba.com/resized-products/5W1DWlQ_350x200_1x-0.jpg"
+   },
+   {
+      "id": 9,
+      "nombre": "Dying Light 2",
+      "precio": 2999.99,
+      "categoria": "Mundo abierto | Zombies",
+      "img": "https://cdn-products.eneba.com/resized-products/r3h1Lkdyv1_U_GVPFKa3zoJL-B33Hc5FocCUlhcjHZM_350x200_1x-0.jpeg"
+   },
+   {
+      "id": 5,
+      "nombre": "Grand Theft Auto V",
+      "precio": 699.99,
+      "categoria": "Mundo abierto | Historia",
+      "img": "https://cdn-products.eneba.com/resized-products/s29Db6ZBVLneuD0t66qnYRamvGDP3p8chLz-3IomxcU_350x200_1x-0.jpeg"
+   },
+   {
+      "id": 3,
+      "nombre": "Far Cry 3",
+      "precio": 999.99,
+      "categoria": "FPS | Mundo abierto",
+      "img": "https://cdn-products.eneba.com/resized-products/clqp8A2_350x200_1x-0.jpg"
+   }
+]
