@@ -15,7 +15,7 @@ fetch("./products/mates.json")
 
          let productoHTML = `
          <div class="productos">
-            <img class="productos-img" src=${producto.img}>
+            <img class="productos-img" src="${producto.img}" alt="Producto">
             <h3 class="productos-card">${producto.nombre}</h3>
             <h4 class="productos-card">${producto.categoria}</h4>
             <h5 class="productos-card">$${producto.precio}</h5>
@@ -48,7 +48,7 @@ fetch("./products/termos.json")
 
          let productoHTML = `
          <div class="productos">
-            <img class="productos-img" src=${producto.img}>
+            <img class="productos-img" src="${producto.img}" alt="Producto">
             <h3 class="productos-card">${producto.nombre}</h3>
             <h4 class="productos-card">${producto.categoria}</h4>
             <h5 class="productos-card">$${producto.precio}</h5>

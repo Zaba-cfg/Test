@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,33 +7,52 @@
     font-family: sans-serif;
 }
 
+*::selection {
+    color: black;
+    background-color: white;
+}
+
 html {
-    background-color: #282828;
+    --s: 140px;
+    /* control the size */
+
+    --_g: #0000 52%, #364e44
+        /* first color */
+        54% 57%, #0000 59%;
+    background:
+        radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2),
+        radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0,
+        radial-gradient(farthest-side at 133.33% 50%, var(--_g)),
+        radial-gradient(farthest-side at 50% -33.33%, var(--_g)),
+        #67917A;
+    /* second color */
+    background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
     scroll-behavior: smooth;
 }
 
-/* Navbar */
 
-.logo {
-    max-width: 4rem;
+/* Botón para volver al inicio */
+
+.volver {
+    z-index: 98;
+    position: fixed;
+    border: solid #282828 2px;
+    color: black;
+    padding: .9rem 1rem .8rem 1rem;
+    border-radius: 50%;
+    background-color: #ececec;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
 }
+
+/* Navbar */
 
 a {
     text-decoration: none;
     color: #ececec;
 }
 
-.volver {
-    z-index: 98;
-    position: fixed;
-    border: solid #ececec 1px;
-    padding: .9rem 1rem .8rem 1rem;
-    border-radius: 50%;
-    background-color: #282828;
-    bottom: 0;
-    right: 0;
-    margin: 2rem;
-}
 
 header {
     z-index: 98;
@@ -40,6 +61,11 @@ header {
     justify-content: space-between;
     padding: 1.3rem 3rem 1.3rem 3rem;
     background-color: #1c1c1c;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
 }
 
 .navbar-list {
@@ -58,6 +84,54 @@ header {
 
 .navbar-item-link:hover {
     color: #ececec;
+}
+
+/* Título estilo máquina de escribir */
+
+.maquina-de-escribir-title {
+    color: red;
+    background-color: #1c1c1cd1;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 45px;
+    white-space: nowrap;
+    border-right: 4px solid;
+    overflow: hidden;
+    /* Numero de caracteres que tenga la línea */
+    width: 17ch;
+    animation: typing 4s infinite steps(17);
+    animation: blink .5 infinite step-end alternate;
+    animation-delay: .1s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.maquina-de-escribir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.titulos {
+    padding: 1.5rem;
+    color: #ececec;
+    font-size: 2.4rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 /* Cards */
@@ -98,14 +172,6 @@ header {
     flex-direction: column;
     margin: 2rem;
     width: 15rem;
-}
-
-.titulos {
-    padding: 1.5rem;
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
 }
 
 /* Footer */
@@ -166,7 +232,7 @@ main section {
 
 .carousel {
     width: 100%;
-    max-width: 120rem;
+    max-width: 100rem;
     padding: 2rem;
     color: #393939;
     transition: all 0.4s ease;
@@ -319,5 +385,25 @@ main section {
 
     .puntos {
         display: none;
+    }
+
+    /* Máquina de escribir */
+
+    .maquina-de-escribir-title {
+        color: red;
+        background-color: #1c1c1cd1;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 2.4rem;
+        white-space: nowrap;
+        border-right: 4px solid;
+        overflow: hidden;
+        /* Numero de caracteres que tenga la línea */
+        width: 17ch;
+        animation: typing 3.5s infinite steps(17);
+        animation: blink .5 infinite step-end alternate;
+        animation-delay: .1s;
     }
 }

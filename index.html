@@ -21,14 +21,14 @@
     <!-- Comienzo header -->
     <header>
         <a href="./index.html">
-            <h2>matermo.dibatt</h2>
+            <h2 class="logo">matermo.dibatt</h2>
         </a>
         <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
         <nav class="navbar" id="navbar">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="navbar-list">
                 <li class="navbar-item">
-                    <a class="navbar-item-link" href="#inicio">Inicio</a>
+                    <a class="navbar-item-link" href="./index.html">Inicio</a>
                 </li>
                 <li class="navbar-item">
                     <a class="navbar-item-link" href="#productos">Productos</a>
@@ -47,17 +47,18 @@
     <main>
         <section>
             <h1 class="titulos">Título principal</h1>
-            <h2 class="titulos">Título secundario, descripción o explicación</h2>
-            <h3 class="titulos">Descripción más larga</h3>
+            <div class="maquina-de-escribir">
+                <span class="maquina-de-escribir-title">¡ÚLTIMO STOCK!</span>
+            </div>
             <a href="#inicio" class="volver" id="volver" data-aos="fade-up">
                 <i class="bi bi-arrow-up"></i>
             </a>
-            <div class="carousel" data-aos="fade-down" data-aos-easing="linear">
+            <div class="carousel">
                 <div class="grande">
-                    <img src="https://www.stanleypmi.com.py/wp-content/uploads/2021/09/03-Classic-700x700-px-1.jpg" alt="" class="imgCarousel">
-                    <img src="https://www.stanleypmi.com.py/wp-content/uploads/2021/09/03-Classic-700x700-px-1.jpg" alt="" class="imgCarousel">
-                    <img src="https://www.stanleypmi.com.py/wp-content/uploads/2021/09/03-Classic-700x700-px-1.jpg" alt="" class="imgCarousel">
-                    <img src="https://www.stanleypmi.com.py/wp-content/uploads/2021/09/03-Classic-700x700-px-1.jpg" alt="" class="imgCarousel">
+                    <img src="https://www.stanleypmi.com.py/wp-content/uploads/2021/09/03-Classic-700x700-px-1.jpg" alt="Mate" class="imgCarousel">
+                    <img src="https://www.stanleypmi.com.py/wp-content/uploads/2021/09/03-Classic-700x700-px-1.jpg" alt="Termo" class="imgCarousel">
+                    <img src="https://www.stanleypmi.com.py/wp-content/uploads/2021/09/03-Classic-700x700-px-1.jpg" alt="Mate" class="imgCarousel">
+                    <img src="https://www.stanleypmi.com.py/wp-content/uploads/2021/09/03-Classic-700x700-px-1.jpg" alt="Termo" class="imgCarousel">
                 </div>
                 <ul class="puntos">
                     <li class="punto"></li>
@@ -66,11 +67,11 @@
             </div>
             <div class="slider" id="slider"></div>
             <h1 class="titulos" id="productos">PRODUCTOS</h1>
-            <div id="contenedorProductos" data-aos="fade-up"></div>
+            <div id="contenedorProductos"></div>
             <h1 class="titulos" id="termo">TERMOS</h1>
-            <div id="contenedorTermos" data-aos="fade-up"></div>
+            <div id="contenedorTermos"></div>
             <h1 class="titulos" id="mate">MATES</h1>
-            <div id="contenedorMates" data-aos="fade-up"></div>
+            <div id="contenedorMates"></div>
         </section>
     </main>
     <!-- Fin main -->
