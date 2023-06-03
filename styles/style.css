@@ -125,53 +125,35 @@ header {
     height: 20vh;
 }
 
+#flecha {
+    font-size: 2.5rem;
+    color: #414141;
+}
+
 .titulos {
     padding: 1.5rem;
     color: #ececec;
+    opacity: .9;
+    background-color: #282828;
     font-size: 2.4rem;
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
-/* Cards */
-
-.productos-img {
-    width: auto;
-    height: auto;
-}
-
-.productos-card {
-    padding: 10px;
-}
-
-#contenedorProductos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#contenedorMates {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#contenedorTermos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.productos {
+.titulo-footer {
+    padding: 2rem;
+    font-size: 1.4rem;
     color: #ececec;
-    border: #191717 solid 1px;
-    background-color: #191717;
-    justify-content: space-between;
     display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    width: 15rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Oculto las cards para que solo se muestren en PC */
+
+.container-cards {
+    display: none;
 }
 
 /* Footer */
@@ -182,8 +164,9 @@ footer {
     padding-bottom: 2rem;
 }
 
-footer div i {
+footer div a i {
     color: #ececec;
+    font-size: 1.2rem;
 }
 
 .footer-icons {
@@ -223,73 +206,84 @@ footer div i {
 
 /* Carousel */
 
-main section {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.carousel {
-    width: 100%;
-    max-width: 100rem;
-    padding: 2rem;
-    color: #393939;
-    transition: all 0.4s ease;
-    border-radius: 1rem;
-    background-color: #191717;
-    overflow: hidden;
-}
-
-.grande {
-    width: 200%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    color: #393939;
-    transition: all 0.4s ease;
-    border-radius: 1rem;
-    padding: 1rem;
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+    margin-bottom: 5rem;
     background-color: #1c1c1c;
-    transition: all 0.5s ease;
-    transform: translateX(0%);
-}
-
-.imgCarousel {
-    width: calc(100% / 2 - 2rem);
-    border-radius: 5rem;
-    padding: 4rem;
-    height: 40rem;
-    color: #393939;
-    transition: all 0.4s ease;
-    background-color: #1c1c1c;
-}
-
-.puntos {
-    width: 100%;
-    margin: 1em 0 0;
-    padding: 0.4rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.punto {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 1rem 1rem 0;
-    color: #393939;
-    transition: all 0.4s ease;
     border-radius: 1rem;
-    list-style: none;
+    padding: 3rem;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #ececec;
     cursor: pointer;
-    background-color: black;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #1c1c1c;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
 }
 
-.punto.activo {
-    background-color: #393939;
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100% / 2);
+    }
 }
 
 /* Media queries */
@@ -369,22 +363,83 @@ main section {
 
     /* Ocultar scroll en firefox y otros navegadores */
 
-    .slider {
+    .slider,
+    .container-cards {
         scrollbar-width: none;
     }
 
-    .slider::-webkit-scrollbar {
+    .slider::-webkit-scrollbar,
+    .container-cards::-webkit-scrollbar {
         width: 0px;
     }
 
-    /* Ocultar carousel en mobile */
+    /* carousel */
 
-    .carousel {
+    .wrapper {
         display: none;
     }
 
-    .puntos {
-        display: none;
+    /* Cards */
+
+    .container-cards {
+        display: flex;
+        gap: 2rem;
+        max-width: 400px;
+        width: 100%;
+        padding: 15px;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        scroll-padding: 30px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .container-cards .card {
+        display: flex;
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 12px;
+        background: #1c1c1c;
+        scroll-snap-align: start;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card .image {
+        height: 20rem;
+        width: 22rem;
+        padding: 4px;
+    }
+
+    .image img {
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+        border: 5px solid #1c1c1c;
+    }
+
+    .card h2 {
+        margin-top: 25px;
+        color: #ececec;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .description {
+        text-align: center;
+        margin-top: 25px;
+        color: #ececec;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .card p {
+        margin-top: 4px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ececec;
+        text-align: center;
     }
 
     /* Máquina de escribir */
@@ -405,5 +460,11 @@ main section {
         animation: typing 3.5s infinite steps(17);
         animation: blink .5 infinite step-end alternate;
         animation-delay: .1s;
+    }
+
+    /* Boton para volver */
+
+    .volver {
+        margin: .8rem;
     }
 }

@@ -1,0 +1,38 @@
+[
+   {
+      "id": 1,
+      "nombre": "Termo stanley",
+      "descripcion": "Termo de 1 litro color azul",
+      "descripcion2": "La mejor calidad que te sorpenderá",
+      "descripcion3": "Mantiene la temperatura hasta 7 dias para que nunca tomes un mate frio",
+      "precio": 1000,
+      "categoria": "Termos",
+      "img1": "../images/products/1.jpeg",
+      "img2": "../images/products/2.jpeg",
+      "img3": "../images/products/3.jpeg"
+   },
+   {
+      "id": 2,
+      "nombre": "Termo stanley",
+      "descripcion": "Termo de 1 litro color verde",
+      "descripcion2": "La mejor calidad que te sorpenderá",
+      "descripcion3": "Mantiene la temperatura hasta 7 dias para que nunca tomes un mate frio",
+      "precio": 1000,
+      "categoria": "Termos",
+      "img1": "../images/products/4.jpeg",
+      "img2": "../images/products/5.jpeg",
+      "img3": "../images/products/6.jpeg"
+   },
+   {
+      "id": 3,
+      "nombre": "Termo stanley",
+      "descripcion": "Termo de 1 litro color rosa",
+      "descripcion2": "La mejor calidad que te sorpenderá",
+      "descripcion3": "Mantiene la temperatura hasta 7 dias para que nunca tomes un mate frio",
+      "precio": 1000,
+      "categoria": "Termos",
+      "img1": "../images/products/7.jpeg",
+      "img2": "../images/products/8.jpeg",
+      "img3": "../images/products/9.jpeg"
+   }
+]
