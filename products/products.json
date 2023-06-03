@@ -7,9 +7,9 @@
       "descripcion3": "Mantiene la temperatura hasta 7 dias para que nunca tomes un mate frio",
       "precio": 1000,
       "categoria": "Termos",
-      "img1": "../images/products/1.jpeg",
-      "img2": "../images/products/2.jpeg",
-      "img3": "../images/products/3.jpeg"
+      "img1": "https://i.ibb.co/Lv5sZTN/1.jpg",
+      "img2": "https://i.ibb.co/Nyr8s9f/2.jpg",
+      "img3": "https://i.ibb.co/SBpNJWH/3.jpg"
    },
    {
       "id": 2,
@@ -19,9 +19,9 @@
       "descripcion3": "Mantiene la temperatura hasta 7 dias para que nunca tomes un mate frio",
       "precio": 1000,
       "categoria": "Termos",
-      "img1": "../images/products/4.jpeg",
-      "img2": "../images/products/5.jpeg",
-      "img3": "../images/products/6.jpeg"
+      "img1": "https://i.ibb.co/dKwB3CF/4.jpg",
+      "img2": "https://i.ibb.co/rQYTv65/5.jpg",
+      "img3": "https://i.ibb.co/kKFCLt3/6.jpg"
    },
    {
       "id": 3,
@@ -31,8 +31,8 @@
       "descripcion3": "Mantiene la temperatura hasta 7 dias para que nunca tomes un mate frio",
       "precio": 1000,
       "categoria": "Termos",
-      "img1": "../images/products/7.jpeg",
-      "img2": "../images/products/8.jpeg",
-      "img3": "../images/products/9.jpeg"
+      "img1": "https://i.ibb.co/gzbQng3/7.jpg",
+      "img2": "https://i.ibb.co/QKVbBvX/8.jpg",
+      "img3": "https://i.ibb.co/3NMYGwF/9.jpg"
    }
 ]
