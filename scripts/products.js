@@ -20,7 +20,6 @@ fetch("./products/products.json")
                <p>${producto.descripcion}</p>
                <p>$${producto.precio}</p>
                <div>
-                  <i class="bi bi-arrow-left btn-left"></i>
                   <i class="bi bi-arrow-right btn-right"></i>
                </div>
             </div>
@@ -41,7 +40,6 @@ fetch("./products/products.json")
                <h2 class="description">${producto.descripcion3}</h2>
                <div>
                   <i class="bi bi-arrow-left btn-left"></i>
-                  <i class="bi bi-arrow-right btn-right"></i>
                </div>
             </div>
          </section>
@@ -55,11 +53,13 @@ fetch("./products/products.json")
       let btnLeft = document.querySelectorAll(".btn-left")
       let btnRight = document.querySelectorAll(".btn-right")
 
+      const scrollAmount = 392 // Cantidad de desplazamiento personalizado
+
       btnLeft.forEach(function (btn) {
          btn.addEventListener("click", function () {
             let containerCards = this.closest(".container-cards")
             containerCards.scrollTo({
-               left: containerCards.scrollLeft - containerCards.clientWidth,
+               left: containerCards.scrollLeft - scrollAmount,
                behavior: "smooth",
             })
          })
@@ -69,7 +69,7 @@ fetch("./products/products.json")
          btn.addEventListener("click", function () {
             let containerCards = this.closest(".container-cards")
             containerCards.scrollTo({
-               left: containerCards.scrollLeft + containerCards.clientWidth,
+               left: containerCards.scrollLeft + scrollAmount,
                behavior: "smooth",
             })
          })

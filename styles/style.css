@@ -236,17 +236,22 @@ footer div a i {
     overflow-x: scroll;
     scroll-padding: 30px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    scrollbar-width: none;
+}
+
+.container-cards::-webkit-scrollbar {
+    width: 0px;
 }
 
 .container-cards .card {
     display: flex;
     flex: 0 0 100%;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     border-radius: 12px;
     background: #1c1c1c;
-    scroll-snap-align: start;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
