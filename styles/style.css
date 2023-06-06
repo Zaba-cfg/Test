@@ -86,46 +86,9 @@ header {
     color: #ececec;
 }
 
-/* Título estilo máquina de escribir */
-
-.maquina-de-escribir-title {
-    color: red;
-    background-color: #1c1c1cd1;
-    padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 45px;
-    white-space: nowrap;
-    border-right: 4px solid;
-    overflow: hidden;
-    /* Numero de caracteres que tenga la línea */
-    width: 17ch;
-    animation: typing 4s infinite steps(17);
-    animation: blink .5 infinite step-end alternate;
-    animation-delay: .1s;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-.maquina-de-escribir {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-}
-
-#flecha {
+.btn-left,
+.btn-right {
+    cursor: pointer;
     font-size: 2.5rem;
     color: #414141;
 }
@@ -148,12 +111,6 @@ header {
     display: flex;
     text-align: center;
     justify-content: center;
-}
-
-/* Oculto las cards para que solo se muestren en PC */
-
-.container-cards {
-    display: none;
 }
 
 /* Footer */
@@ -189,19 +146,6 @@ footer div a i {
 
 .bi-facebook:hover {
     color: lightblue;
-}
-
-/* Menú hamburguesa */
-
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-}
-
-/* Slider */
-
-.slider {
-    display: none;
 }
 
 /* Carousel */
@@ -280,13 +224,140 @@ footer div a i {
     margin-left: 0px;
 }
 
+/* Cards */
+
+.container-cards {
+    display: flex;
+    gap: 2rem;
+    max-width: 380px;
+    width: 100%;
+    padding: 15px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container-cards .card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #1c1c1c;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .image {
+    height: 20rem;
+    width: 24rem;
+    padding: 4px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 5px solid #1c1c1c;
+}
+
+.card h2 {
+    margin-top: 25px;
+    color: #ececec;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.description {
+    text-align: center;
+    margin-top: 25px;
+    color: #ececec;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card p {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ececec;
+    text-align: center;
+}
+
+#contenedorProductos {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Título estilo máquina de escribir */
+
+.maquina-de-escribir-title {
+    color: red;
+    background-color: #1c1c1cd1;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 45px;
+    white-space: nowrap;
+    border-right: 4px solid;
+    overflow: hidden;
+    /* Numero de caracteres que tenga la línea */
+    width: 17ch;
+    animation: typing 4s infinite steps(17);
+    animation: blink .5 infinite step-end alternate;
+    animation-delay: .1s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.maquina-de-escribir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+/* Menú hamburguesa */
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/* Slider */
+
+.slider {
+    display: none;
+}
+
+/* Media queries */
+
 @media screen and (max-width: 900px) {
     .carousel img {
         width: calc(100% / 2);
     }
 }
-
-/* Media queries */
 
 @media screen and (max-width: 550px) {
 
@@ -346,10 +417,13 @@ footer div a i {
         overflow: scroll;
         height: auto;
         width: 100%;
-        border-radius: 4px;
         position: relative;
         display: flex;
         scroll-snap-type: x mandatory;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        background-color: #1c1c1c;
+        padding: 1rem;
     }
 
     .slider img {
@@ -377,69 +451,6 @@ footer div a i {
 
     .wrapper {
         display: none;
-    }
-
-    /* Cards */
-
-    .container-cards {
-        display: flex;
-        gap: 2rem;
-        max-width: 400px;
-        width: 100%;
-        padding: 15px;
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        scroll-padding: 30px;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .container-cards .card {
-        display: flex;
-        flex: 0 0 100%;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        border-radius: 12px;
-        background: #1c1c1c;
-        scroll-snap-align: start;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .card .image {
-        height: 20rem;
-        width: 22rem;
-        padding: 4px;
-    }
-
-    .image img {
-        height: 100%;
-        width: 100%;
-        border-radius: 1rem;
-        object-fit: cover;
-        border: 5px solid #1c1c1c;
-    }
-
-    .card h2 {
-        margin-top: 25px;
-        color: #ececec;
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-    .description {
-        text-align: center;
-        margin-top: 25px;
-        color: #ececec;
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-    .card p {
-        margin-top: 4px;
-        font-size: 18px;
-        font-weight: 400;
-        color: #ececec;
-        text-align: center;
     }
 
     /* Máquina de escribir */

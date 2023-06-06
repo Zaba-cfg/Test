@@ -1,18 +1,15 @@
 // Contenedor de productos
-
 let contenedorProductos = document.getElementById("contenedorProductos")
-// Hacer la solicitud utilizando fetch para obtener el archivo JSON de productos
 
+// Hacer la solicitud utilizando fetch para obtener el archivo JSON de productos
 fetch("./products/products.json")
    .then(function (response) {
       return response.json()
    })
    .then(function (data) {
       // Recorrer el array de productos y mostrar los detalles
-
       data.forEach(function (producto) {
          // Crear el HTML para los detalles del producto
-
          let productoHTML = `
          <section class="container-cards">
             <div class="card">
@@ -22,26 +19,60 @@ fetch("./products/products.json")
                <h2>${producto.nombre}</h2>
                <p>${producto.descripcion}</p>
                <p>$${producto.precio}</p>
-               <i id="flecha" class="bi bi-arrow-right"></i>
+               <div>
+                  <i class="bi bi-arrow-left btn-left"></i>
+                  <i class="bi bi-arrow-right btn-right"></i>
+               </div>
             </div>
             <div class="card">
                <div class="image">
                   <img src="${producto.img2}" alt="producto" />
                </div>
                <h2 class="description">${producto.descripcion2}</h2>
+               <div>
+                  <i class="bi bi-arrow-left btn-left"></i>
+                  <i class="bi bi-arrow-right btn-right"></i>
+               </div>
             </div>
             <div class="card">
                <div class="image">
                   <img src="${producto.img3}" alt="producto" />
                </div>
                <h2 class="description">${producto.descripcion3}</h2>
+               <div>
+                  <i class="bi bi-arrow-left btn-left"></i>
+                  <i class="bi bi-arrow-right btn-right"></i>
+               </div>
             </div>
          </section>
          `
 
          // Agregar el HTML al contenedor de productos utilizando innerHTML
-
          contenedorProductos.innerHTML += productoHTML
+      })
+
+      // Agregar eventos de click a los botones
+      let btnLeft = document.querySelectorAll(".btn-left")
+      let btnRight = document.querySelectorAll(".btn-right")
+
+      btnLeft.forEach(function (btn) {
+         btn.addEventListener("click", function () {
+            let containerCards = this.closest(".container-cards")
+            containerCards.scrollTo({
+               left: containerCards.scrollLeft - containerCards.clientWidth,
+               behavior: "smooth",
+            })
+         })
+      })
+
+      btnRight.forEach(function (btn) {
+         btn.addEventListener("click", function () {
+            let containerCards = this.closest(".container-cards")
+            containerCards.scrollTo({
+               left: containerCards.scrollLeft + containerCards.clientWidth,
+               behavior: "smooth",
+            })
+         })
       })
    })
    .catch(function (error) {
