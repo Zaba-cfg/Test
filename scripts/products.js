@@ -27,17 +27,13 @@ fetch("./products/products.json")
                <div class="image">
                   <img src="${producto.img2}" alt="producto" />
                </div>
-               <h2 class="description">${producto.descripcion2}</h2>
-               <div>
-                  <i class="bi bi-arrow-left btn-left"></i>
-                  <i class="bi bi-arrow-right btn-right"></i>
-               </div>
-            </div>
-            <div class="card">
-               <div class="image">
-                  <img src="${producto.img3}" alt="producto" />
-               </div>
-               <h2 class="description">${producto.descripcion3}</h2>
+               <p class="description">${producto.descripcion2}</p>
+               <p class="description">${producto.descripcion3}</p>
+               <p class="description">${producto.descripcion4}</p>
+               <p class="description">${producto.descripcion5}</p>
+               <p class="description">${producto.descripcion6}</p>
+               <p class="description">${producto.descripcion7}</p>
+               <p class="description">${producto.descripcion8}</p>
                <div>
                   <i class="bi bi-arrow-left btn-left"></i>
                </div>
@@ -92,7 +88,6 @@ fetch("./products/products.json")
          let productoHTML = `
                <img src="${producto.img1}" alt="Producto">
                <img src="${producto.img2}" alt="Producto">
-               <img src="${producto.img3}" alt="Producto">
          `
          slider.innerHTML += productoHTML
       })
