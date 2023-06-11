@@ -248,7 +248,6 @@ footer div a i {
     flex: 0 0 100%;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding: 1rem;
     border-radius: 12px;
     background: #1c1c1c;
@@ -259,6 +258,9 @@ footer div a i {
     height: 24rem;
     width: 24rem;
     padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .image img {
@@ -278,11 +280,15 @@ footer div a i {
 }
 
 .description {
-    text-align: center;
     margin-top: 25px;
     color: #ececec;
     font-size: 22px;
-    font-weight: 600;
+    text-align: start;
+}
+
+.precio {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(137, 230, 137) !important;
 }
 
 .card p {
@@ -290,7 +296,15 @@ footer div a i {
     font-size: 18px;
     font-weight: 400;
     color: #ececec;
-    text-align: center;
+    font-weight: bold;
+}
+
+
+.btn-left,
+.btn-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contenedorProductos {
@@ -437,7 +451,6 @@ footer div a i {
         scroll-snap-type: x mandatory;
         margin-bottom: 4rem;
         margin-top: 4rem;
-        border-radius: 5px;
         background-color: #ceb7c5;
         padding: 1rem;
     }
@@ -445,6 +458,7 @@ footer div a i {
     .slider img {
         height: auto;
         width: auto;
+        border-radius: 10px;
         left: 0;
         position: sticky;
         object-fit: cover;

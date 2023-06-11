@@ -17,8 +17,8 @@ fetch("./products/products.json")
                   <img src="${producto.img1}" alt="producto" />
                </div>
                <h2>${producto.nombre}</h2>
+               <p class="precio">$${producto.precio}</p>
                <p>${producto.descripcion}</p>
-               <p>$${producto.precio}</p>
                <div>
                   <i class="bi bi-arrow-right btn-right"></i>
                </div>
@@ -27,13 +27,13 @@ fetch("./products/products.json")
                <div class="image">
                   <img src="${producto.img2}" alt="producto" />
                </div>
+               <p class="description">${producto.descripcion1}</p>
                <p class="description">${producto.descripcion2}</p>
                <p class="description">${producto.descripcion3}</p>
                <p class="description">${producto.descripcion4}</p>
                <p class="description">${producto.descripcion5}</p>
                <p class="description">${producto.descripcion6}</p>
                <p class="description">${producto.descripcion7}</p>
-               <p class="description">${producto.descripcion8}</p>
                <div>
                   <i class="bi bi-arrow-left btn-left"></i>
                </div>
@@ -69,27 +69,6 @@ fetch("./products/products.json")
                behavior: "smooth",
             })
          })
-      })
-   })
-   .catch(function (error) {
-      console.log("Error al obtener los datos de productos:", error)
-   })
-
-// Mismo código pero para el slider
-
-let slider = document.getElementById("slider")
-
-fetch("./products/products.json")
-   .then(function (response) {
-      return response.json()
-   })
-   .then(function (data) {
-      data.forEach(function (producto) {
-         let productoHTML = `
-               <img src="${producto.img1}" alt="Producto">
-               <img src="${producto.img2}" alt="Producto">
-         `
-         slider.innerHTML += productoHTML
       })
    })
    .catch(function (error) {
