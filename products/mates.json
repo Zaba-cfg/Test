@@ -1,0 +1,58 @@
+[
+   {
+      "id": 1,
+      "nombre": "MATE STANLEY 236ML",
+      "descripcion": "COLOR: VERDE",
+      "descripcion1": "CARACTERÍSTICAS:",
+      "descripcion2": "→ Acero inoxidable 18/8",
+      "descripcion3": "→ Durabilidad",
+      "descripcion4": "→ Aislamiento térmico",
+      "descripcion5": "→ Diseño cómodo",
+      "precio": 9500,
+      "categoria": "Mates",
+      "img1": "https://i.ibb.co/n3YkNJM/mate-verde.jpg",
+      "img2": "https://i.ibb.co/sQqgBn7/mate-verde-1.jpg"
+   },
+   {
+      "id": 2,
+      "nombre": "MATE STANLEY 236ML",
+      "descripcion": "COLOR: ROJO",
+      "descripcion1": "CARACTERÍSTICAS:",
+      "descripcion2": "→ Acero inoxidable 18/8",
+      "descripcion3": "→ Durabilidad",
+      "descripcion4": "→ Aislamiento térmico",
+      "descripcion5": "→ Diseño cómodo",
+      "precio": 9500,
+      "categoria": "Mates",
+      "img1": "https://i.ibb.co/Sw8M380/mate-rojo.jpg",
+      "img2": "https://i.ibb.co/qpSXrgF/mate-rojo-1.jpg"
+   },
+   {
+      "id": 3,
+      "nombre": "MATE STANLEY 236ML",
+      "descripcion": "COLOR: AZUL",
+      "descripcion1": "CARACTERÍSTICAS:",
+      "descripcion2": "→ Acero inoxidable 18/8",
+      "descripcion3": "→ Durabilidad",
+      "descripcion4": "→ Aislamiento térmico",
+      "descripcion5": "→ Diseño cómodo",
+      "precio": 9500,
+      "categoria": "Mates",
+      "img1": "https://i.ibb.co/Pxy2KST/mate-azul.jpg",
+      "img2": "https://i.ibb.co/ZcxM7Km/mate-azul-1.jpg"
+   },
+   {
+      "id": 4,
+      "nombre": "MATE STANLEY 236ML",
+      "descripcion": "COLOR: NEGRO",
+      "descripcion1": "CARACTERÍSTICAS:",
+      "descripcion2": "→ Acero inoxidable 18/8",
+      "descripcion3": "→ Durabilidad",
+      "descripcion4": "→ Aislamiento térmico",
+      "descripcion5": "→ Diseño cómodo",
+      "precio": 9500,
+      "categoria": "Mates",
+      "img1": "https://i.ibb.co/Kr1fbpb/mate-negro.jpg",
+      "img2": "https://i.ibb.co/BK1pS7Y/mate-negro-1.jpg"
+   }
+]

@@ -1,8 +1,8 @@
 // Contenedor de productos
-let contenedorProductos = document.getElementById("contenedorProductos")
+let contenedorMates = document.getElementById("contenedorMates")
 
 // Hacer la solicitud utilizando fetch para obtener el archivo JSON de productos
-fetch("./products/products.json")
+fetch("./products/mates.json")
    .then(function (response) {
       return response.json()
    })
@@ -10,7 +10,7 @@ fetch("./products/products.json")
       // Recorrer el array de productos y mostrar los detalles
       data.forEach(function (producto) {
          // Crear el HTML para los detalles del producto
-         let productoHTML = `
+         let matesHTML = `
          <section class="container-cards">
             <div class="card">
                <div class="image">
@@ -32,8 +32,6 @@ fetch("./products/products.json")
                <p class="description">${producto.descripcion3}</p>
                <p class="description">${producto.descripcion4}</p>
                <p class="description">${producto.descripcion5}</p>
-               <p class="description">${producto.descripcion6}</p>
-               <p class="description">${producto.descripcion7}</p>
                <div>
                   <i class="bi bi-arrow-left btn-left"></i>
                </div>
@@ -42,7 +40,7 @@ fetch("./products/products.json")
          `
 
          // Agregar el HTML al contenedor de productos utilizando innerHTML
-         contenedorProductos.innerHTML += productoHTML
+         contenedorMates.innerHTML += matesHTML
       })
 
       // Agregar eventos de click a los botones
