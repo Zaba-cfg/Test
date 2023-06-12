@@ -65,7 +65,7 @@ header {
 
 .logo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .navbar-list {
@@ -89,7 +89,7 @@ header {
 .btn-left,
 .btn-right {
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     color: #414141;
 }
 
@@ -98,7 +98,7 @@ header {
     color: #ececec;
     opacity: .9;
     background-color: #282828;
-    font-size: 2.4rem;
+    font-size: 2.4em;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -106,7 +106,7 @@ header {
 
 .titulo-footer {
     padding: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     color: #ececec;
     display: flex;
     text-align: center;
@@ -123,7 +123,7 @@ footer {
 
 footer div a i {
     color: #ececec;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .footer-icons {
@@ -172,7 +172,7 @@ footer div a i {
     width: 44px;
     color: #ececec;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2em;
     position: absolute;
     text-align: center;
     line-height: 44px;
@@ -255,8 +255,8 @@ footer div a i {
 }
 
 .card .image {
-    height: 24rem;
-    width: 24rem;
+    height: 330px;
+    width: 330px;
     padding: 4px;
     display: flex;
     justify-content: center;
@@ -272,9 +272,9 @@ footer div a i {
 }
 
 .card h2 {
+    font-size: 20px;
     margin-top: 25px;
     color: #ececec;
-    font-size: 22px;
     font-weight: 600;
     text-align: center;
 }
@@ -397,7 +397,7 @@ footer div a i {
     .cerrar-menu {
         display: block;
         border: 0;
-        font-size: 1.4rem;
+        font-size: 1.4em;
         background-color: transparent;
         cursor: pointer;
         color: #ececec;
@@ -505,7 +505,7 @@ footer div a i {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         border-radius: 10px;
         font-weight: bold;
-        font-size: 2.4rem;
+        font-size: 2.4em;
         white-space: nowrap;
         border-right: 4px solid;
         overflow: hidden;

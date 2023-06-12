@@ -48,7 +48,7 @@ fetch("./products/termos.json")
       let btnLeft = document.querySelectorAll(".btn-left")
       let btnRight = document.querySelectorAll(".btn-right")
 
-      const scrollAmount = 392 // Cantidad de desplazamiento personalizado
+      const scrollAmount = 500 // Cantidad de desplazamiento personalizado
 
       btnLeft.forEach(function (btn) {
          btn.addEventListener("click", function () {
