@@ -157,6 +157,13 @@ footer div a i {
     align-items: center;
 }
 
+.container-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapper {
     max-width: 1200px;
     position: relative;
@@ -311,7 +318,9 @@ footer div a i {
 #contenedorMates {
     margin: 1rem 1rem 1rem 1rem;
     display: flex;
-    flex-wrap: nowrap;
+    gap: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
     overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-user-select: none;
@@ -484,18 +493,6 @@ footer div a i {
         display: none;
     }
 
-    /* Cards */
-
-    .card {
-        width: 5rem;
-    }
-
-    .card .image {
-        height: 20rem;
-        width: 20rem;
-        padding: 4px;
-    }
-
     /* Máquina de escribir */
 
     .maquina-de-escribir-title {
@@ -520,5 +517,19 @@ footer div a i {
 
     .volver {
         margin: .8rem;
+    }
+
+    /* Contenedores de cards */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contenedorTermos,
+    #contenedorMates {
+        gap: 0;
     }
 }
