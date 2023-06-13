@@ -46,8 +46,12 @@
                 <li class="navbar-item">
                     <a class="navbar-item-link" href="#inicio">Inicio</a>
                 </li>
-                <li class="navbar-item">
-                    <a class="navbar-item-link" href="#termo">Termos</a>
+                <li class="navbar-item dropdown">
+                    <a class="navbar-item-link dropbtn" onclick="myFunction()">Termos</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#termo1">De 1LT</a>
+                        <a href="#termo2">De 1.3LT</a>
+                    </div>
                 </li>
                 <li class="navbar-item">
                     <a class="navbar-item-link" href="#mate">Mates</a>
@@ -73,6 +77,8 @@
                 <img src="./images/products/1.jpeg" alt="Producto">
                 <img src="./images/products/2.jpeg" alt="Producto">
                 <img src="./images/products/3.jpeg" alt="Producto">
+                <img src="./images/products/4.jpeg" alt="Producto">
+                <img src="./images/products/5.jpeg" alt="Producto">
             </div>
             <div class="container-carousel">
                 <div class="wrapper">
@@ -81,14 +87,18 @@
                         <img src="./images/products/1.jpeg" alt="Producto" draggable="false">
                         <img src="./images/products/2.jpeg" alt="Producto" draggable="false">
                         <img src="./images/products/3.jpeg" alt="Producto" draggable="false">
+                        <img src="./images/products/4.jpeg" alt="Producto">
+                        <img src="./images/products/5.jpeg" alt="Producto">
                     </div>
                     <i id="right" class="bi bi-arrow-right-circle-fill"></i>
                 </div>
             </div>
-            <h1 class="titulos" id="termo">TERMOS</h1>
-            <div class="container" id="contenedorTermos"></div>
+            <h1 class="titulos" id="termo1">TERMOS 1LT</h1>
+            <div class="container" id="contenedorTermos" data-aos="fade-up"></div>
+            <h1 class="titulos" id="termo2">TERMOS 1.3LT</h1>
+            <div class="container" id="contenedorTermos13" data-aos="fade-up"></div>
             <h1 class="titulos" id="mate">MATES</h1>
-            <div class="container" id="contenedorMates"></div>
+            <div class="container" id="contenedorMates" data-aos="fade-up"></div>
         </section>
     </main>
     <!-- Fin main -->

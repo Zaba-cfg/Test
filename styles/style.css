@@ -104,6 +104,66 @@ header {
     justify-content: center;
 }
 
+/* Dropdown */
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    background-color: #222222;
+    min-width: 7rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 97;
+    animation-name: dropdownAnimation;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #ececec;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #272727;
+}
+
+/* Show the dropdown menu with animation */
+.show {
+    display: block;
+}
+
+/* Dropdown Animation */
+@keyframes dropdownAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+
 .titulo-footer {
     padding: 2rem;
     font-size: 1.4em;
@@ -112,8 +172,6 @@ header {
     text-align: center;
     justify-content: center;
 }
-
-/* Footer */
 
 footer {
     background-color: #1c1c1c;
@@ -315,7 +373,8 @@ footer div a i {
 }
 
 #contenedorTermos,
-#contenedorMates {
+#contenedorMates,
+#contenedorTermos13 {
     margin: 1rem 1rem 1rem 1rem;
     display: flex;
     gap: 5rem;
@@ -449,6 +508,12 @@ footer div a i {
         transition: color 0.3s ease;
     }
 
+    /* Dropdown */
+
+    .dropdown-content {
+        right: 0;
+    }
+
     /* Slider */
 
     .slider {
@@ -528,7 +593,16 @@ footer div a i {
         align-items: center;
     }
 
+    .card {
+        min-width: 100%;
+    }
+
+    .image img {
+        width: 90%;
+    }
+
     #contenedorTermos,
+    #contenedorTermos13,
     #contenedorMates {
         gap: 0;
     }
