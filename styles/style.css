@@ -181,17 +181,13 @@ footer {
 
 footer div a i {
     color: #ececec;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .footer-icons {
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-.bi-whatsapp:hover {
-    color: lightgreen;
 }
 
 .bi-instagram:hover {
@@ -338,7 +334,6 @@ footer div a i {
 
 .card h2 {
     font-size: 20px;
-    margin-top: 25px;
     color: #ececec;
     font-weight: 600;
     text-align: center;
@@ -370,6 +365,12 @@ footer div a i {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    color: #ececec;
+    transition: all .3s;
 }
 
 #contenedorTermos,
@@ -449,13 +450,26 @@ footer div a i {
     display: none;
 }
 
-/* Media queries */
-
-@media screen and (max-width: 900px) {
-    .carousel img {
-        width: calc(100% / 2);
-    }
+.carrito {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    color: rgb(115, 220, 115);
+    font-size: 2rem;
+    background-color: #1c1c1c;
+    border: solid #1c1c1c 5px;
+    padding: .2rem;
+    border-bottom-right-radius: 1rem;
 }
+
+.comprar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media queries */
 
 @media screen and (max-width: 550px) {
 
@@ -526,14 +540,13 @@ footer div a i {
         scroll-snap-type: x mandatory;
         margin-bottom: 4rem;
         margin-top: 4rem;
-        background-color: #ceb7c5;
+        background-color: #ececec;
         padding: 1rem;
     }
 
     .slider img {
         height: auto;
         width: auto;
-        border-radius: 10px;
         left: 0;
         position: sticky;
         object-fit: cover;
@@ -594,7 +607,7 @@ footer div a i {
     }
 
     .card {
-        min-width: 100%;
+        min-width: 90%;
     }
 
     .image img {
@@ -605,5 +618,9 @@ footer div a i {
     #contenedorTermos13,
     #contenedorMates {
         gap: 0;
+    }
+
+    .carrito {
+        left: 10px;
     }
 }

@@ -14,7 +14,10 @@ fetch("./products/mates.json")
          <section class="container-cards">
             <div class="card">
                <div class="image">
-                  <img src="${producto.img1}" alt="producto" />
+                  <a class="comprar" href="https://wa.me/5492622640549?text=QUIERO%20VER%20LOS%20TERMOS%20NENE" target="_blank">
+                     <img src="${producto.img1}" alt="producto" />
+                     <i class="bi bi-bag-check-fill carrito"></i>
+                  </a>
                </div>
                <h2>${producto.nombre}</h2>
                <p class="precio">$${producto.precio}</p>
