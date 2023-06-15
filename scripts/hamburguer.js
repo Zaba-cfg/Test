@@ -1,35 +1,39 @@
-// Menú hamburguesa
+//Menú hamburguesa
 
 const navbar = document.querySelector("#navbar")
 const abrir = document.querySelector("#abrir")
 const cerrar = document.querySelector("#cerrar")
+const navbarItemLinks = document.querySelectorAll(".navbar-item-link")
+const dropdownBtn = document.querySelector(".dropbtn")
+const dropdownContent = document.querySelector("#myDropdown")
+const dropdownOptions = dropdownContent.querySelectorAll("a")
 
-abrir.addEventListener("click", () => {
-   navbar.classList.add("visible")
-})
-
-cerrar.addEventListener("click", () => {
-   navbar.classList.remove("visible")
-})
-
-// Dropdown
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-   document.getElementById("myDropdown").classList.toggle("show")
+const toggleNavbar = () => {
+   navbar.classList.toggle("visible")
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-   if (!event.target.matches(".dropbtn")) {
-      let dropdowns = document.getElementsByClassName("dropdown-content")
-      let i
-      for (i = 0; i < dropdowns.length; i++) {
-         let openDropdown = dropdowns[i]
-         if (openDropdown.classList.contains("show")) {
-            openDropdown.classList.remove("show")
-         }
+abrir.addEventListener("click", toggleNavbar)
+cerrar.addEventListener("click", toggleNavbar)
+
+navbarItemLinks.forEach((link) => {
+   link.addEventListener("click", (event) => {
+      if (!event.target.classList.contains("dropbtn")) {
+         toggleNavbar()
       }
+   })
+})
+
+dropdownBtn.addEventListener("click", (event) => {
+   event.stopPropagation()
+   dropdownContent.classList.toggle("show")
+})
+
+dropdownOptions.forEach((option) => {
+   option.addEventListener("click", toggleNavbar)
+})
+
+window.addEventListener("click", () => {
+   if (dropdownContent.classList.contains("show")) {
+      dropdownContent.classList.remove("show")
    }
-}
+})

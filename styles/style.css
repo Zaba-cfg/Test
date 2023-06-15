@@ -452,8 +452,8 @@ footer div a i {
 
 .carrito {
     position: absolute;
-    left: 1px;
-    top: 1px;
+    left: 0;
+    top: 0;
     color: rgb(115, 220, 115);
     font-size: 2rem;
     background-color: #1c1c1c;
