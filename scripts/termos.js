@@ -22,6 +22,7 @@ fetch("./products/termos.json")
                <h2>${producto.nombre}</h2>
                <p class="precio">$${producto.precio}</p>
                <p>${producto.descripcion}</p>
+               <i class="bi bi-circle-fill ${producto.color}"></i>
                <div>
                   <i class="bi bi-arrow-right btn-right"></i>
                </div>
@@ -31,11 +32,6 @@ fetch("./products/termos.json")
                   <img src="${producto.img2}" alt="producto" />
                </div>
                <p class="description">${producto.descripcion1}</p>
-               <p class="description">${producto.descripcion2}</p>
-               <p class="description">${producto.descripcion3}</p>
-               <p class="description">${producto.descripcion4}</p>
-               <p class="description">${producto.descripcion5}</p>
-               <p class="description">${producto.descripcion6}</p>
                <div>
                   <i class="bi bi-arrow-left btn-left"></i>
                </div>
@@ -101,6 +97,7 @@ fetch("./products/termos13.json")
                <h2>${producto.nombre}</h2>
                <p class="precio">$${producto.precio}</p>
                <p>${producto.descripcion}</p>
+               <i class="bi bi-circle-fill ${producto.color}"></i>
                <div>
                   <i class="bi bi-arrow-right btn-right"></i>
                </div>
@@ -110,11 +107,6 @@ fetch("./products/termos13.json")
                   <img src="${producto.img2}" alt="producto" />
                </div>
                <p class="description">${producto.descripcion1}</p>
-               <p class="description">${producto.descripcion2}</p>
-               <p class="description">${producto.descripcion3}</p>
-               <p class="description">${producto.descripcion4}</p>
-               <p class="description">${producto.descripcion5}</p>
-               <p class="description">${producto.descripcion6}</p>
                <div>
                   <i class="bi bi-arrow-left btn-left"></i>
                </div>

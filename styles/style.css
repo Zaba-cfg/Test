@@ -1,4 +1,8 @@
+/* Fuentes */
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Reset */
 
 * {
     margin: 0;
@@ -7,10 +11,14 @@
     font-family: sans-serif;
 }
 
+/* Selector de textos */
+
 *::selection {
     color: black;
     background-color: white;
 }
+
+/* Fondo de la página */
 
 html {
     --s: 140px;
@@ -30,10 +38,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* Botón para volver al inicio */
 
-.volver {
+#btn-scroll-home {
     z-index: 98;
     position: fixed;
     border: solid #282828 2px;
@@ -45,6 +52,20 @@ html {
     right: 0;
     margin: 2rem;
 }
+
+/* Títulos generales */
+
+.titulos {
+    padding: 1.5rem;
+    color: #ececec;
+    opacity: .9;
+    background-color: #282828;
+    font-size: 2.4em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 
 /* Navbar */
 
@@ -86,38 +107,17 @@ header {
     color: #ececec;
 }
 
-.btn-left,
-.btn-right {
-    cursor: pointer;
-    font-size: 2.5em;
-    color: #414141;
-}
+/* Dropdown de la navbar */
 
-.titulos {
-    padding: 1.5rem;
-    color: #ececec;
-    opacity: .9;
-    background-color: #282828;
-    font-size: 2.4em;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-/* Dropdown */
-
-/* Dropdown Button */
 .dropbtn {
     cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     margin-top: 10px;
@@ -131,7 +131,6 @@ header {
     animation-timing-function: ease-in-out;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: #ececec;
     padding: 12px 16px;
@@ -139,17 +138,14 @@ header {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #272727;
 }
 
-/* Show the dropdown menu with animation */
 .show {
     display: block;
 }
 
-/* Dropdown Animation */
 @keyframes dropdownAnimation {
     from {
         opacity: 0;
@@ -359,12 +355,14 @@ footer div a i {
     font-weight: bold;
 }
 
-
 .btn-left,
 .btn-right {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    font-size: 2.5em;
+    color: #414141;
 }
 
 .btn-left:hover,
@@ -393,10 +391,59 @@ footer div a i {
     /* Standard */
 }
 
-.hidden {
-    display: none;
+.carrito {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(115, 220, 115);
+    font-size: 2rem;
+    background-color: #1c1c1c;
+    border: solid #1c1c1c 5px;
+    padding: .2rem;
+    border-bottom-right-radius: 1rem;
 }
 
+.comprar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Colores de las cards */
+
+.negro,
+.rosa,
+.blanco,
+.verde,
+.rojo,
+.azul {
+    font-size: 1.3rem;
+}
+
+.negro {
+    color: black;
+}
+
+.rosa {
+    color: salmon;
+}
+
+.blanco {
+    color: white;
+}
+
+.verde {
+    color: #67917a;
+}
+
+.rojo {
+    color: #a1373a;
+}
+
+.azul {
+    color: #0e4166;
+}
 
 /* Título estilo máquina de escribir */
 
@@ -437,36 +484,19 @@ footer div a i {
     height: 20vh;
 }
 
-/* Menú hamburguesa */
+/* Ocultar Slider y Menú hamburguesa en Desktop */
 
 .abrir-menu,
 .cerrar-menu {
     display: none;
 }
 
-/* Slider */
-
-.slider {
+.hidden {
     display: none;
 }
 
-.carrito {
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: rgb(115, 220, 115);
-    font-size: 2rem;
-    background-color: #1c1c1c;
-    border: solid #1c1c1c 5px;
-    padding: .2rem;
-    border-bottom-right-radius: 1rem;
-}
-
-.comprar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slider {
+    display: none;
 }
 
 /* Media queries */
