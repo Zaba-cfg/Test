@@ -1,8 +1,8 @@
-// Contenedor de productos
-let contenedorMates = document.getElementById("contenedorMates")
+// Contenedor de TERMOS 1.3LT
+let contenedorBotellas = document.getElementById("contenedorBotellas")
 
 // Hacer la solicitud utilizando fetch para obtener el archivo JSON de productos
-fetch("./products/mates.json")
+fetch("./products/botellas.json")
    .then(function (response) {
       return response.json()
    })
@@ -10,7 +10,7 @@ fetch("./products/mates.json")
       // Recorrer el array de productos y mostrar los detalles
       data.forEach(function (producto) {
          // Crear el HTML para los detalles del producto
-         let matesHTML = `
+         let botellasHTML = `
          <section class="container-cards">
             <div class="card">
                <div class="image">
@@ -40,7 +40,7 @@ fetch("./products/mates.json")
          `
 
          // Agregar el HTML al contenedor de productos utilizando innerHTML
-         contenedorMates.innerHTML += matesHTML
+         contenedorBotellas.innerHTML += botellasHTML
       })
 
       // Agregar eventos de click a los botones

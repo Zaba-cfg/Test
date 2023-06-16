@@ -14,7 +14,7 @@ fetch("./products/termos.json")
          <section class="container-cards">
             <div class="card">
                <div class="image">
-                  <a class="comprar" href="https://wa.me/5492622640549?text=QUIERO%20VER%20LOS%20TERMOS%20NENE" target="_blank">
+                  <a class="comprar" href="${producto.link}" target="_blank">
                      <img src="${producto.img1}" alt="producto" />
                      <i class="bi bi-bag-check-fill carrito"></i>
                   </a>
@@ -89,7 +89,7 @@ fetch("./products/termos13.json")
          <section class="container-cards">
             <div class="card">
                <div class="image">
-                  <a class="comprar" href="https://wa.me/5492622640549?text=QUIERO%20VER%20LOS%20TERMOS%20NENE" target="_blank">
+                  <a class="comprar" href="${producto.link}" target="_blank">
                      <img src="${producto.img1}" alt="producto" />
                      <i class="bi bi-bag-check-fill carrito"></i>
                   </a>

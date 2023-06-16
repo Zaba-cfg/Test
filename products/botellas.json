@@ -1,0 +1,38 @@
+[
+   {
+      "id": 1,
+      "nombre": "BOTELLA STANLEY FLIP STRAW 887 ML",
+      "color": "blanco",
+      "link": "https://wa.link/vgrh1k",
+      "descripcion": "COLOR: BLANCO",
+      "descripcion1": "CARACTERÍSTICAS: <p>→ Acero inoxidable 18/8</p><p>→ Durabilidad</p><p>→ Aislamiento al vacío</p><p>→ Tapa con pajita</p>",
+      "precio": 10000,
+      "categoria": "Botellas",
+      "img1": "https://i.ibb.co/026Fd82/Botellas-flip-straw-887-ML-blanco.jpg",
+      "img2": "https://i.ibb.co/PrvDYdv/Botellas-flip-straw-887-ML-blanco-1.jpg"
+   },
+   {
+      "id": 2,
+      "nombre": "BOTELLA STANLEY FLIP STRAW 887 ML",
+      "color": "negro",
+      "link": "https://wa.link/ysqh0u",
+      "descripcion": "COLOR: NEGRO",
+      "descripcion1": "CARACTERÍSTICAS: <p>→ Acero inoxidable 18/8</p><p>→ Durabilidad</p><p>→ Aislamiento al vacío</p><p>→ Tapa con pajita</p>",
+      "precio": 10000,
+      "categoria": "Botellas",
+      "img1": "https://i.ibb.co/nkDLJnM/Botellas-flip-straw-887-ML-negro.jpg",
+      "img2": "https://i.ibb.co/4NJMn9c/Botellas-flip-straw-887-ML-negro-1.jpg"
+   },
+   {
+      "id": 3,
+      "nombre": "BOTELLA STANLEY FLIP STRAW 887 ML",
+      "color": "naranja",
+      "link": "https://wa.link/qdshd9",
+      "descripcion": "COLOR: NARANJA",
+      "descripcion1": "CARACTERÍSTICAS: <p>→ Acero inoxidable 18/8</p><p>→ Durabilidad</p><p>→ Aislamiento al vacío</p><p>→ Tapa con pajita</p>",
+      "precio": 10000,
+      "categoria": "Botellas",
+      "img1": "https://i.ibb.co/ZYQckWd/Botellas-flip-straw-887-ML-naranja.jpg",
+      "img2": "https://i.ibb.co/8cKbcZc/Botellas-flip-straw-887-ML-naranja-1.jpg"
+   }
+]

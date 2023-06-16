@@ -373,7 +373,8 @@ footer div a i {
 
 #contenedorTermos,
 #contenedorMates,
-#contenedorTermos13 {
+#contenedorTermos13,
+#contenedorBotellas {
     margin: 1rem 1rem 1rem 1rem;
     display: flex;
     gap: 5rem;
@@ -410,6 +411,15 @@ footer div a i {
     justify-content: center;
 }
 
+.titulo-sin-stock {
+    color: red;
+    background-color: #ececec;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 /* Colores de las cards */
 
 .negro,
@@ -417,20 +427,21 @@ footer div a i {
 .blanco,
 .verde,
 .rojo,
-.azul {
+.azul,
+.naranja {
     font-size: 1.3rem;
 }
 
 .negro {
-    color: black;
+    color: #383838;
 }
 
 .rosa {
-    color: salmon;
+    color: #deac9c;
 }
 
 .blanco {
-    color: white;
+    color: #ececec;
 }
 
 .verde {
@@ -443,6 +454,10 @@ footer div a i {
 
 .azul {
     color: #0e4166;
+}
+
+.naranja {
+    color: #fb795d;
 }
 
 /* Título estilo máquina de escribir */
