@@ -16,7 +16,7 @@ fetch("./products/termos.json")
                <div class="image">
                   <a class="comprar" href="${producto.link}" target="_blank">
                      <img src="${producto.img1}" alt="producto" />
-                     <i class="bi bi-bag-check-fill carrito"></i>
+                     <i class="bi bi-whatsapp carrito"></i>
                   </a>
                </div>
                <h2>${producto.nombre}</h2>
@@ -91,7 +91,7 @@ fetch("./products/termos13.json")
                <div class="image">
                   <a class="comprar" href="${producto.link}" target="_blank">
                      <img src="${producto.img1}" alt="producto" />
-                     <i class="bi bi-bag-check-fill carrito"></i>
+                     <i class="bi bi-whatsapp carrito"></i>
                   </a>
                </div>
                <h2>${producto.nombre}</h2>
