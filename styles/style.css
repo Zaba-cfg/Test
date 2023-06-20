@@ -81,10 +81,10 @@ a {
     color: #ececec;
 }
 
-a:active {
+a.link:active,
+a.link:hover {
     background-color: transparent;
 }
-
 
 header {
     z-index: 98;
