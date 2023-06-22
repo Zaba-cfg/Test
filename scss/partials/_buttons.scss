@@ -1,0 +1,18 @@
+//Botón para volver al principio
+
+main {
+    section {
+        #btn-scroll-home {
+            z-index: 98;
+            position: fixed;
+            border: solid #282828 2px;
+            color: $negro;
+            padding: .9rem 1rem .8rem 1rem;
+            border-radius: 50%;
+            background-color: $blanco;
+            bottom: 0;
+            right: 0;
+            margin: 2rem;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+/* Footer */
+
+.titulo-footer {
+    padding: 2rem;
+    font-size: 1.4em;
+    color: #ececec;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #1c1c1c;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+footer div a i {
+    color: #ececec;
+    font-size: 1.5em;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bi-instagram:hover {
+    color: lightsalmon;
+}
+
+.bi-tiktok:hover {
+    color: violet;
+}
+
+.bi-facebook:hover {
+    color: lightblue;
+}
