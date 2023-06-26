@@ -62,7 +62,7 @@
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
@@ -72,10 +72,8 @@ main section #contenedorTermos13,
 main section #contenedorBotellas {
   margin: 1rem 1rem 1rem 1rem;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   overflow-x: auto;
-  scroll-behavior: smooth;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -110,11 +108,7 @@ main section .container .container-cards {
     background: #1c1c1c;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); }
     main section .container .container-cards .card .image {
-      height: 300px;
-      width: 100%;
-      padding: 4px;
-      display: flex;
-      justify-content: center; }
+      padding: .7rem; }
       main section .container .container-cards .card .image .comprar {
         position: relative;
         display: flex;
@@ -127,23 +121,20 @@ main section .container .container-cards {
           color: #73dc73;
           font-size: 1.7rem;
           background-color: #1c1c1c;
-          border: solid #1c1c1c 5px;
-          padding: .2rem;
+          padding: .5rem;
           border-bottom-right-radius: 1rem; }
       main section .container .container-cards .card .image img {
-        height: 100%;
+        height: 300px;
         width: 100%;
-        border-radius: 1rem;
-        border: 5px solid #1c1c1c; }
+        border-radius: 1rem; }
     main section .container .container-cards .card h2 {
       font-size: 20px;
       color: #ececec;
-      font-weight: 600;
+      font-weight: bold;
       text-align: center; }
     main section .container .container-cards .card p {
       margin-top: 4px;
       font-size: 18px;
-      font-weight: 400;
       color: #ececec;
       font-weight: bold; }
     main section .container .container-cards .card .description {
@@ -230,22 +221,24 @@ footer {
   margin-top: 5rem;
   padding-bottom: 2rem; }
 
-/* Fonts */
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif; }
 
-/* Fondo de la página */
 html {
-  background-image: url(/images/fondo.jpeg);
-  background-size: contain;
-  background-repeat: repeat;
+  --s: 140px;
+  --_g: #0000 52%, #364e44 54% 57%, #0000 59%;
+  background: radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2), radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0, radial-gradient(farthest-side at 133.33% 50%, var(--_g)), radial-gradient(farthest-side at 50% -33.33%, var(--_g)), #67917A;
+  background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
   scroll-behavior: smooth; }
 
-/* Ocultar Slider y Menú hamburguesa en Desktop */
+a:link,
+a:visited,
+a:active {
+  text-decoration: none; }
+
 .abrir-menu,
 .cerrar-menu,
 .hidden,
@@ -258,25 +251,24 @@ html {
   margin-top: 4rem;
   color: red;
   background-color: #ececec;
-  font-size: 3rem; }
+  font-size: 2.5rem; }
 
 .typewriter {
-  height: 20vh;
-  display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: flex-start;
-  border-radius: 1rem;
+  width: 100vw;
+  height: 15vh;
   padding: 1rem;
   margin-top: 4rem;
   color: #ececec;
-  font-size: 3rem; }
+  font-size: 2.5rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
 
 .typewriter-item {
   background-color: antiquewhite;
   text-align: left;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; }
 
 header {
   z-index: 98;
@@ -357,16 +349,25 @@ main section .container-redes {
       font-size: 2.5rem; }
 
 main section #btn-scroll-home {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 46px;
+  height: 46px;
   z-index: 98;
   position: fixed;
   border: solid #282828 2px;
-  color: #1c1c1c;
-  padding: .9rem 1rem .8rem 1rem;
   border-radius: 50%;
   background-color: #ececec;
   bottom: 0;
   right: 0;
   margin: 2rem; }
+  main section #btn-scroll-home i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1c1c1c;
+    font-size: 1rem; }
 
 /* Títulos generales */
 .titulos {
@@ -447,8 +448,4 @@ main section #btn-scroll-home {
   main section div .wrapper {
     display: none; }
   main section .hidden_mobile {
-    display: none !important; }
-  html {
-    background-image: url(/images/fondo_mobile.jpeg);
-    background-size: contain;
-    background-repeat: repeat; } }
+    display: none !important; } }

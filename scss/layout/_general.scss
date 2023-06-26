@@ -1,8 +1,8 @@
-/* Fonts */
+// Fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* Reset */
+// Reset
 
 * {
     margin: 0;
@@ -11,16 +11,30 @@
     font-family: sans-serif;
 }
 
-/* Fondo de la página */
+// Fondo de la página
 
 html {
-    background-image: url(/images/fondo.jpeg);
-    background-size: contain;
-    background-repeat: repeat;
+    --s: 140px;
+    --_g: #0000 52%, #364e44 54% 57%, #0000 59%;
+    background:
+        radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2),
+        radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0,
+        radial-gradient(farthest-side at 133.33% 50%, var(--_g)),
+        radial-gradient(farthest-side at 50% -33.33%, var(--_g)),
+        #67917A;
+    background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
     scroll-behavior: smooth;
 }
 
-/* Ocultar Slider y Menú hamburguesa en Desktop */
+// Reset de estilos en links
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+// Oculatodres
 
 .abrir-menu,
 .cerrar-menu,
@@ -32,7 +46,7 @@ html {
 // Contenedor principal
 
 .container {
-    @extend %container_center_column;
+    @extend %container_center_row;
 }
 
 // Typewriter
@@ -43,20 +57,18 @@ html {
     margin-top: 4rem;
     color: red;
     background-color: $blanco;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .typewriter {
-    height: 20vh;
-    display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 1rem;
+    width: 100vw;
+    height: 15vh;
     padding: 1rem;
     margin-top: 4rem;
     color: $blanco;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .typewriter-item {
@@ -64,4 +76,5 @@ html {
     text-align: left;
     color: black;
     font-weight: bold;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
