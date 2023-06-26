@@ -93,8 +93,9 @@
                 scroll-snap-type: x mandatory;
                 margin-bottom: 4rem;
                 margin-top: 4rem;
-                background-color: black;
-                padding: 5px;
+                background-color: $blanco;
+                border-top: groove $blanco 10px;
+                border-bottom: groove $blanco 10px;
 
                 img {
                     height: auto;
@@ -123,10 +124,13 @@
         }
     }
 
-    html,
-    body {
-        background-image: url(/images/fondo_mobile.jpeg);
+    html {
+        background-image: url(../../images/fondo_mobile.jpeg);
         background-size: contain;
         background-repeat: repeat-y;
+    }
+
+    body {
+        background-color: rgba(0, 0, 0, .6);
     }
 }

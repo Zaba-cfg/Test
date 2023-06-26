@@ -18,15 +18,15 @@ const typedStock = new Typed(".typedStock", {
 
 const typedPrueba = new Typed(".typedPrueba", {
    stringsElement: "#typewriter-textos",
-   typeSpeed: 75,
-   startDelay: 300,
+   typeSpeed: 60,
+   startDelay: 200,
    backSpeed: 45,
    smartBackspace: true,
    shuffle: false,
-   backDelay: 1500,
+   backDelay: 1300,
    loop: true,
    loopCount: false,
-   showCursor: true,
+   showCursor: false,
    cursorChar: "|",
    contentType: "html",
 })

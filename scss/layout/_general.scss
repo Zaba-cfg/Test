@@ -74,13 +74,10 @@ button:active {
 
 .typewriter {
     text-align: center;
-    width: 100vw;
-    height: 15vh;
     padding: 1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     color: $blanco;
     font-size: 2.5rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .typewriter-item {
@@ -88,5 +85,4 @@ button:active {
     text-align: left;
     color: black;
     font-weight: bold;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }

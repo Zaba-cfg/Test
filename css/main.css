@@ -260,20 +260,16 @@ button:active {
 
 .typewriter {
   text-align: center;
-  width: 100vw;
-  height: 15vh;
   padding: 1rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   color: #ececec;
-  font-size: 2.5rem;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+  font-size: 2.5rem; }
 
 .typewriter-item {
   background-color: antiquewhite;
   text-align: left;
   color: black;
-  font-weight: bold;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; }
+  font-weight: bold; }
 
 header {
   z-index: 98;
@@ -439,8 +435,9 @@ main section #btn-scroll-home {
     scroll-snap-type: x mandatory;
     margin-bottom: 4rem;
     margin-top: 4rem;
-    background-color: black;
-    padding: 5px; }
+    background-color: #ececec;
+    border-top: groove #ececec 10px;
+    border-bottom: groove #ececec 10px; }
     main section .slider img {
       height: auto;
       width: auto;
@@ -452,8 +449,9 @@ main section #btn-scroll-home {
     display: none; }
   main section .hidden_mobile {
     display: none !important; }
-  html,
-  body {
-    background-image: url(/images/fondo_mobile.jpeg);
+  html {
+    background-image: url(../../images/fondo_mobile.jpeg);
     background-size: contain;
-    background-repeat: repeat-y; } }
+    background-repeat: repeat-y; }
+  body {
+    background-color: rgba(0, 0, 0, 0.6); } }
