@@ -450,8 +450,8 @@ main section #btn-scroll-home {
   main section .hidden_mobile {
     display: none !important; }
   html {
-    background-image: url(https://i.ibb.co/2jHMsKP/fondo-mobile.jpg);
-    background-size: contain;
-    background-repeat: repeat-y; }
+    background-image: url(https://i.ibb.co/2jHMsKP/fondo-mobile.jpg) !important;
+    background-size: contain !important;
+    background-repeat: repeat-y !important; }
   body {
-    background-color: rgba(0, 0, 0, 0.6); } }
+    background-color: rgba(0, 0, 0, 0.6) !important; } }
