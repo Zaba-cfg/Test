@@ -15,7 +15,6 @@
             background-color: transparent;
             cursor: pointer;
             color: $blanco;
-            transition: color 0.3s ease;
         }
 
         // Navbar menú
@@ -94,7 +93,7 @@
                 scroll-snap-type: x mandatory;
                 margin-bottom: 4rem;
                 margin-top: 4rem;
-                background-color: $blanco;
+                background-color: black;
                 padding: 5px;
 
                 img {
@@ -122,5 +121,12 @@
                 display: none !important;
             }
         }
+    }
+
+    html,
+    body {
+        background-image: url(/images/fondo_mobile.jpeg);
+        background-size: contain;
+        background-repeat: repeat-y;
     }
 }

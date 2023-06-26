@@ -33,11 +33,11 @@ $color in $colores_icons {
 
     .#{$color_icon}:hover {
         color: $color;
-        transition: all .2s;
     }
 
     .#{$color_icon} {
         color: $blanco;
         font-size: 1.5rem;
+        transition: all .2s;
     }
 }

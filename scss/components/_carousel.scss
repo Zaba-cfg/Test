@@ -29,12 +29,6 @@ main {
                     line-height: 44px;
                     background: $negro;
                     border-radius: 50%;
-                    transform: translateY(-50%);
-                    transition: transform 0.1s linear;
-                }
-
-                i:active {
-                    transform: translateY(-50%) scale(0.9);
                 }
 
                 i:first-child {

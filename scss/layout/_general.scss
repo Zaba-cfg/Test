@@ -34,6 +34,18 @@ a:active {
     text-decoration: none;
 }
 
+// Animación al presionar los botones y icons del sitio
+
+i,
+button {
+    transition: transform 0.1s linear;
+}
+
+i:active,
+button:active {
+    transform: scale(0.9);
+}
+
 // Oculatodres
 
 .abrir-menu,

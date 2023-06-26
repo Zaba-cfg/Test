@@ -33,6 +33,7 @@ main {
         }
 
         .container {
+            gap: 2rem;
 
             .container-cards {
                 display: flex;
@@ -121,12 +122,12 @@ main {
                             cursor: pointer;
                             font-size: 2.5em;
                             color: $gris;
+                            transition: all .3s;
                         }
 
                         .btn-left:hover,
                         .btn-right:hover {
                             color: $blanco;
-                            transition: all .3s;
                         }
 
                     }
