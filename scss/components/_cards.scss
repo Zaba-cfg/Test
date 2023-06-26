@@ -1,176 +1,150 @@
-/* Cards */
+// Cards
 
-.container-cards {
-    display: flex;
-    gap: 2rem;
-    max-width: 380px;
-    width: 100%;
-    padding: 15px;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    scroll-padding: 30px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-    scrollbar-width: none;
-}
+main {
+    section {
 
-.container-cards::-webkit-scrollbar {
-    width: 0px;
-}
+        #contenedorTermos,
+        #contenedorMates,
+        #contenedorTermos13,
+        #contenedorBotellas {
+            margin: 1rem 1rem 1rem 1rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            -webkit-user-select: none;
+            // Safari
+            -moz-user-select: none;
+            // Firefox
+            -ms-user-select: none;
+            // IE 10+/Edge
+            user-select: none;
+            // Standard
+        }
 
-.container-cards .card {
-    display: flex;
-    flex: 0 0 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-    border-radius: 12px;
-    background: #1c1c1c;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-}
+        div {
+            .titulo-sin-stock {
+                color: red;
+                background-color: $blanco;
+                font-size: 3rem;
+                text-align: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+        }
 
-.card .image {
-    height: 300px;
-    width: 100%;
-    padding: 4px;
-    display: flex;
-    justify-content: center;
-}
+        .container {
 
-.image img {
-    height: 100%;
-    width: 100%;
-    border-radius: 1rem;
-    border: 5px solid #1c1c1c;
-}
+            .container-cards {
+                display: flex;
+                gap: 2rem;
+                max-width: 380px;
+                width: 100%;
+                padding: 15px;
+                scroll-snap-type: x mandatory;
+                overflow-x: scroll;
+                scroll-padding: 30px;
+                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+                scrollbar-width: none;
 
-.card h2 {
-    font-size: 20px;
-    color: #ececec;
-    font-weight: 600;
-    text-align: center;
-}
+                .card {
+                    display: flex;
+                    flex: 0 0 100%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    border-radius: 12px;
+                    background: $negro;
+                    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 
-.description {
-    margin-top: 25px;
-    color: #ececec;
-    font-size: 22px;
-    text-align: start;
-}
+                    .image {
+                        height: 300px;
+                        width: 100%;
+                        padding: 4px;
+                        display: flex;
+                        justify-content: center;
 
-.precio {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(137, 230, 137) !important;
-}
+                        .comprar {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
 
-.card p {
-    margin-top: 4px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #ececec;
-    font-weight: bold;
-}
+                            .carrito {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                color: rgb(115, 220, 115);
+                                font-size: 1.7rem;
+                                background-color: $negro;
+                                border: solid $negro 5px;
+                                padding: .2rem;
+                                border-bottom-right-radius: 1rem;
+                            }
+                        }
 
-.btn-left,
-.btn-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 2.5em;
-    color: #414141;
-}
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 1rem;
+                            border: 5px solid $negro;
+                        }
+                    }
 
-.btn-left:hover,
-.btn-right:hover {
-    color: #ececec;
-    transition: all .3s;
-}
+                    h2 {
+                        font-size: 20px;
+                        color: $blanco;
+                        font-weight: 600;
+                        text-align: center;
+                    }
 
-#contenedorTermos,
-#contenedorMates,
-#contenedorTermos13,
-#contenedorBotellas {
-    margin: 1rem 1rem 1rem 1rem;
-    display: flex;
-    gap: 5rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-user-select: none;
-    /* Safari */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* IE 10+/Edge */
-    user-select: none;
-    /* Standard */
-}
+                    p {
+                        margin-top: 4px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $blanco;
+                        font-weight: bold;
+                    }
 
-.carrito {
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: rgb(115, 220, 115);
-    font-size: 1.7rem;
-    background-color: #1c1c1c;
-    border: solid #1c1c1c 5px;
-    padding: .2rem;
-    border-bottom-right-radius: 1rem;
-}
+                    .description {
+                        margin-top: 10px;
+                        color: $blanco;
+                        font-size: 18px;
+                        text-align: start;
+                        font-weight: bold;
+                    }
 
-.comprar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+                    .precio {
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        color: rgb(137, 230, 137) !important;
+                    }
 
-.titulo-sin-stock {
-    color: red;
-    background-color: #ececec;
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
+                    div {
 
-/* Colores de las cards */
+                        .btn-left,
+                        .btn-right {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            font-size: 2.5em;
+                            color: $gris;
+                        }
 
-.negro,
-.rosa,
-.blanco,
-.verde,
-.rojo,
-.azul,
-.naranja {
-    font-size: 1.3rem;
-}
+                        .btn-left:hover,
+                        .btn-right:hover {
+                            color: $blanco;
+                            transition: all .3s;
+                        }
 
-.negro {
-    color: #383838;
-}
+                    }
+                }
+            }
 
-.rosa {
-    color: #deac9c;
-}
-
-.blanco {
-    color: #ececec;
-}
-
-.verde {
-    color: #67917a;
-}
-
-.rojo {
-    color: #a1373a;
-}
-
-.azul {
-    color: #0e4166;
-}
-
-.naranja {
-    color: #fb795d;
+            .container-cards::-webkit-scrollbar {
+                width: 0px;
+            }
+        }
+    }
 }

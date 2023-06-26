@@ -1,38 +1,28 @@
-/* Título estilo máquina de escribir */
+// Main
 
-.maquina-de-escribir-title {
-    color: red;
-    background-color: #1c1c1cd1;
-    padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 45px;
-    white-space: nowrap;
-    border-right: 4px solid;
-    overflow: hidden;
-    /* Numero de caracteres que tenga la línea */
-    width: 17ch;
-    animation: typing 4s infinite steps(17);
-    animation: blink .5 infinite step-end alternate;
-    animation-delay: .1s;
-}
+main {
+    section {
 
-@keyframes typing {
-    from {
-        width: 0;
+        .container-redes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            margin-bottom: 4rem;
+
+            a {
+                background-color: $negro;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    font-size: 2.5rem;
+                }
+            }
+        }
     }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-.maquina-de-escribir {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
 }

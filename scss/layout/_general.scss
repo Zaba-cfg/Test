@@ -1,4 +1,4 @@
-/* Fuentes */
+/* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
@@ -11,44 +11,57 @@
     font-family: sans-serif;
 }
 
-/* Selector de textos */
-
-*::selection {
-    color: $negro;
-    background-color: $blanco;
-}
-
 /* Fondo de la página */
 
 html {
-    --s: 140px;
-    /* control the size */
-
-    --_g: #0000 52%, #364e44
-        /* first color */
-        54% 57%, #0000 59%;
-    background:
-        radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2),
-        radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0,
-        radial-gradient(farthest-side at 133.33% 50%, var(--_g)),
-        radial-gradient(farthest-side at 50% -33.33%, var(--_g)),
-        #67917A;
-    /* second color */
-    background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
+    background-image: url(/images/fondo.jpeg);
+    background-size: contain;
+    background-repeat: repeat;
     scroll-behavior: smooth;
 }
 
 /* Ocultar Slider y Menú hamburguesa en Desktop */
 
 .abrir-menu,
-.cerrar-menu {
-    display: none;
-}
-
-.hidden {
-    display: none;
-}
-
+.cerrar-menu,
+.hidden,
 .slider {
     display: none;
+}
+
+// Contenedor principal
+
+.container {
+    @extend %container_center_column;
+}
+
+// Typewriter
+
+.typewriter-important {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+    color: red;
+    background-color: $blanco;
+    font-size: 3rem;
+}
+
+.typewriter {
+    height: 20vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    color: $blanco;
+    font-size: 3rem;
+}
+
+.typewriter-item {
+    background-color: antiquewhite;
+    text-align: left;
+    color: black;
+    font-weight: bold;
 }

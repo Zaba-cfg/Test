@@ -41,8 +41,8 @@
         </a>
         <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
         <nav class="navbar" id="navbar">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="navbar-list">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
                 <li class="navbar-item">
                     <a class="navbar-item-link" href="./index.html">Inicio</a>
                 </li>
@@ -59,10 +59,18 @@
                 <li class="navbar-item">
                     <a class="navbar-item-link" href="#mate">Mates</a>
                 </li>
-                <li class="navbar-item">
-                    <a class="navbar-item-link" href="#contacto">Contacto</a>
-                </li>
             </ul>
+            <div class="header-icons hidden">
+                <a href="https://www.instagram.com/matermo.dibatt/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@joacodibattista1" target="_blank">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
         </nav>
     </header>
     <!-- Fin header -->
@@ -70,8 +78,16 @@
     <main>
         <section>
             <h1 class="titulos">Encuentra tu compañero perfecto: Termos, mates y más</h1>
-            <div class="maquina-de-escribir">
-                <span class="maquina-de-escribir-title">¡ÚLTIMO STOCK!</span>
+            <div>
+                <h2 class="typewriter-important"><span class="typedStock"></span></h2>
+                <h2 class="typewriter">
+                    <span class="typedPrueba"></span>
+                </h2>
+            </div>
+            <div id="typewriter-textos">
+                <p>Descubrí nuestra selección de <i class='typewriter-item'>Mates</i></p>
+                <p>Descubrí nuestra selección de <i class='typewriter-item'>Botellas</i></p>
+                <p>Descubrí nuestra selección de <i class='typewriter-item'>Termos</i></p>
             </div>
             <a href="#inicio" id="btn-scroll-home" data-aos="fade-up">
                 <i class="bi bi-arrow-up"></i>
@@ -96,6 +112,17 @@
                     <i id="right" class="bi bi-arrow-right-circle-fill"></i>
                 </div>
             </div>
+            <div class="container-redes hidden_mobile">
+                <a href="https://www.instagram.com/matermo.dibatt/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@joacodibattista1" target="_blank">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
             <h2 class="titulos" id="termo1">TERMOS 1LT</h2>
             <div class="container" id="contenedorTermos"></div>
             <h2 class="titulos" id="termo2">TERMOS 1.3LT</h2>
@@ -110,32 +137,25 @@
     </main>
     <!-- Fin main -->
     <!-- Comienzo footer -->
-    <footer id="contacto">
-        <h3 class="titulo-footer">¡Seguime en mis redes!</h3>
-        <div class="footer-icons">
-            <a href="https://www.instagram.com/matermo.dibatt/" target="_blank">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@joacodibattista1" target="_blank">
-                <i class="bi bi-tiktok"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="bi bi-facebook"></i>
-            </a>
+    <footer class="hidden_mobile" id="contacto">
+        <div>
         </div>
     </footer>
     <!-- Fin footer -->
+    <!-- Librerías -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Script productos-->
     <script src="./scripts/termos.js"></script>
     <script src="./scripts/mates.js"></script>
     <script src="./scripts/botellas.js"></script>
     <!-- Script animaciones y otros-->
+    <script src="./scripts/typewriter.js"></script>
     <script src="./scripts/carousel.js"></script>
     <script src="./scripts/hamburguer.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

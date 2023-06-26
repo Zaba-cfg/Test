@@ -1,14 +1,43 @@
-// Map para las pages
-$titulos: (
-    cegadoras: #212529,
-    humos: #212529,
-    molotovs: #212529,
+// Map para el color de los productos
+
+$colores_productos: (
+    negro: #383838,
+    rosa: #deac9c,
+    blanco: #ececec,
+    verde: #67917a,
+    rojo: #a1373a,
+    azul: #0e4166,
+    naranja: #fb795d,
 );
 
-@each $pagina,
-$color in $titulos {
-    .pagina_#{$pagina} {
-        background-color: $color;
-        border: solid 2px $color;
+@each $color_producto,
+$color in $colores_productos {
+
+    .#{$color_producto} {
+        color: $color;
+        font-size: 1.3rem;
+    }
+}
+
+// Map para el color de los icons
+
+$colores_icons: (
+    bi-facebook: lightblue,
+    bi-tiktok: violet,
+    bi-instagram: lightsalmon,
+    bi-whatsapp: lightgreen,
+);
+
+@each $color_icon,
+$color in $colores_icons {
+
+    .#{$color_icon}:hover {
+        color: $color;
+        transition: all .2s;
+    }
+
+    .#{$color_icon} {
+        color: $blanco;
+        font-size: 1.5rem;
     }
 }

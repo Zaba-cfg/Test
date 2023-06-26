@@ -1,82 +1,80 @@
-/* Carousel */
+// Carousel
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+main {
+    section {
+        .container-carousel {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-.container-carousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+            .wrapper {
+                background-color: $negro;
+                max-width: 1200px;
+                position: relative;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+                border-radius: 1rem;
+                padding: 3rem;
 
-.wrapper {
-    max-width: 1200px;
-    position: relative;
-    margin-bottom: 5rem;
-    background-color: #1c1c1c;
-    border-radius: 1rem;
-    padding: 3rem;
-}
+                i {
+                    top: 50%;
+                    height: 44px;
+                    width: 44px;
+                    color: $blanco;
+                    cursor: pointer;
+                    font-size: 2em;
+                    position: absolute;
+                    text-align: center;
+                    line-height: 44px;
+                    background: $negro;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                    transition: transform 0.1s linear;
+                }
 
-.wrapper i {
-    top: 50%;
-    height: 44px;
-    width: 44px;
-    color: #ececec;
-    cursor: pointer;
-    font-size: 2em;
-    position: absolute;
-    text-align: center;
-    line-height: 44px;
-    background: #1c1c1c;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.1s linear;
-}
+                i:active {
+                    transform: translateY(-50%) scale(0.9);
+                }
 
-.wrapper i:active {
-    transform: translateY(-50%) scale(0.9);
-}
+                i:first-child {
+                    left: -22px;
+                    display: none;
+                }
 
-.wrapper i:first-child {
-    left: -22px;
-    display: none;
-}
+                i:last-child {
+                    right: -22px;
+                }
 
-.wrapper i:last-child {
-    right: -22px;
-}
+                .carousel {
+                    font-size: 0px;
+                    cursor: grab;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    scroll-behavior: smooth;
 
-.wrapper .carousel {
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-}
+                    img {
+                        height: 340px;
+                        object-fit: cover;
+                        user-select: none;
+                        margin-left: 14px;
+                        width: calc(97% / 3);
+                    }
 
-.carousel.dragging {
-    cursor: grab;
-    scroll-behavior: smooth;
-}
+                    img:first-child {
+                        margin-left: 0px;
+                    }
 
-.carousel.dragging img {
-    pointer-events: none;
-}
+                    .dragging {
+                        cursor: grab;
+                        scroll-behavior: smooth;
 
-.carousel img {
-    height: 340px;
-    object-fit: cover;
-    user-select: none;
-    margin-left: 14px;
-    width: calc(100% / 3);
-}
-
-.carousel img:first-child {
-    margin-left: 0px;
+                        img {
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,15 @@
-// Banners
-%banner_centrado {
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
+// Extends
+
+%container_center_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%container_center_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
