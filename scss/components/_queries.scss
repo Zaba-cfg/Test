@@ -1,136 +1,137 @@
 // Media queries
 
 @media screen and (max-width: 580px) {
-
-    header {
-
-        // Menú hamburguesa
-        // Botones del menú
-
-        .abrir-menu,
-        .cerrar-menu {
-            display: block;
-            border: 0;
-            font-size: 1.4em;
-            background-color: transparent;
-            cursor: pointer;
-            color: $blanco;
-        }
-
-        // Navbar menú
-
-        .navbar {
-            opacity: 0;
-            visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            align-items: end;
-            gap: 1rem;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 11.5rem;
-            background-color: $negro;
-            padding: 2rem;
-            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-            transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-            z-index: 99;
-            transform: translateX(100%);
-        }
-
-        // Clase que muestra y esconde el menú
-
-        .visible {
-            opacity: 1;
-            visibility: visible;
-            transform: translateX(0%);
-        }
-
-        // Ítems de la lista
-
-        nav {
-            .navbar-list {
-                flex-direction: column;
-                align-items: end;
-            }
-
-            li {
-                .navbar-item-link {
-                    color: $blanco;
-                    transition: color 0.3s ease;
-                }
-
-                // Dropdown
-
-                .dropdown-content {
-                    right: 0;
-                }
-            }
-
-            .header-icons {
-                width: 100%;
-                margin-top: 2rem;
-                display: flex !important;
-                justify-content: space-around;
-                align-items: center;
-            }
-        }
-    }
-
-    main {
-        section {
-
-            // Slider de mobile
-
-            .slider {
-                aspect-ratio: 10/10;
-                overflow: scroll;
-                height: auto;
-                width: 100%;
-                position: relative;
-                display: flex;
-                scroll-snap-type: x mandatory;
-                margin-bottom: 4rem;
-                margin-top: 4rem;
-                background-color: $blanco;
-                border-top: groove $blanco 10px;
-                border-bottom: groove $blanco 10px;
-
-                img {
-                    height: auto;
-                    width: auto;
-                    left: 0;
-                    position: sticky;
-                    object-fit: cover;
-                    scroll-snap-align: center;
-                }
-            }
-
-            div {
-
-                // Ocultar carrousel para solo mostrar el slider
-
-                .wrapper {
-                    display: none;
-                }
-            }
-
-            // Ocultar botones de redes
-
-            .hidden_mobile {
-                display: none !important;
-            }
-        }
-    }
-
     html {
+        // Fondo en mobile
+
         background-image: url(https://i.ibb.co/2jHMsKP/fondo-mobile.jpg) !important;
         background-size: contain !important;
         background-repeat: repeat-y !important;
-    }
 
-    body {
-        background-color: rgba(0, 0, 0, .6) !important;
+        body {
+            background-color: rgba(0, 0, 0, .4) !important;
+        }
+
+        header {
+
+            // Menú hamburguesa
+            // Botones del menú
+
+            .abrir-menu,
+            .cerrar-menu {
+                display: block;
+                border: 0;
+                font-size: 1.4em;
+                background-color: transparent;
+                cursor: pointer;
+                color: $blanco;
+            }
+
+            // Navbar menú
+
+            .navbar {
+                opacity: 0;
+                visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                align-items: end;
+                gap: 1rem;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 11.5rem;
+                background-color: $negro;
+                padding: 2rem;
+                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+                transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+                z-index: 99;
+                transform: translateX(100%);
+            }
+
+            // Clase que muestra y esconde el menú
+
+            .visible {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0%);
+            }
+
+            // Ítems de la lista
+
+            nav {
+                .navbar-list {
+                    flex-direction: column;
+                    align-items: end;
+                }
+
+                li {
+                    .navbar-item-link {
+                        color: $blanco;
+                        transition: color 0.3s ease;
+                    }
+
+                    // Dropdown
+
+                    .dropdown-content {
+                        right: 0;
+                    }
+                }
+
+                .header-icons {
+                    width: 100%;
+                    margin-top: 2rem;
+                    display: flex !important;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+        }
+
+        main {
+            section {
+
+                // Slider de mobile
+
+                .slider {
+                    aspect-ratio: 10/10;
+                    overflow: scroll;
+                    height: auto;
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    scroll-snap-type: x mandatory;
+                    margin-bottom: 4rem;
+                    margin-top: 4rem;
+                    background-color: $blanco;
+                    border-top: groove $blanco 10px;
+                    border-bottom: groove $blanco 10px;
+
+                    img {
+                        height: auto;
+                        width: auto;
+                        left: 0;
+                        position: sticky;
+                        object-fit: cover;
+                        scroll-snap-align: center;
+                    }
+                }
+
+                div {
+
+                    // Ocultar carrousel para solo mostrar el slider
+
+                    .wrapper {
+                        display: none;
+                    }
+                }
+
+                // Ocultar botones de redes
+
+                .hidden_mobile {
+                    display: none !important;
+                }
+            }
+        }
     }
 }

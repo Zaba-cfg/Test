@@ -15,14 +15,14 @@ $color in $colores_productos {
 
     .#{$color_producto} {
         color: $color;
-        font-size: 1.3rem;
+        font-size: 20px;
     }
 }
 
 // Map para el color de los icons
 
 $colores_icons: (
-    bi-facebook: lightblue,
+    bi-facebook: rgb(119, 200, 227),
     bi-tiktok: violet,
     bi-instagram: lightsalmon,
     bi-whatsapp: lightgreen,

@@ -1,4 +1,5 @@
 // Navbar
+
 header {
     z-index: 98;
     display: flex;
@@ -8,7 +9,6 @@ header {
     background-color: #1c1c1c;
 
     a {
-        text-decoration: none;
         color: #ececec;
         touch-action: manipulation;
 
@@ -78,17 +78,5 @@ header {
         .header-icons {
             display: none;
         }
-    }
-}
-
-@keyframes dropdownAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }

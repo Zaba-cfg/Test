@@ -26,12 +26,17 @@ html {
     scroll-behavior: smooth;
 }
 
-// Reset de estilos en links
+// Reset de estilos en links y listas
 
+a,
 a:link,
 a:visited,
 a:active {
     text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
 
 // Animación al presionar los botones y icons del sitio
@@ -59,30 +64,4 @@ button:active {
 
 .container {
     @extend %container_center_row;
-}
-
-// Typewriter
-
-.typewriter-important {
-    text-align: center;
-    padding: 1rem;
-    margin-top: 4rem;
-    color: red;
-    background-color: $blanco;
-    font-size: 2.5rem;
-}
-
-.typewriter {
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    color: $blanco;
-    font-size: 2.5rem;
-}
-
-.typewriter-item {
-    background-color: antiquewhite;
-    text-align: left;
-    color: black;
-    font-weight: bold;
 }

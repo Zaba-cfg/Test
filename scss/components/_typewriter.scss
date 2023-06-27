@@ -1,0 +1,27 @@
+// Typewriter
+
+.typewriter-important {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+    color: red;
+    background-color: $blanco;
+    font-size: 2.5rem;
+}
+
+.typewriter {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: $blanco;
+    font-size: 2.5rem;
+    width: 100vw;
+    height: 20vh;
+}
+
+.typewriter-item {
+    background-color: antiquewhite;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}

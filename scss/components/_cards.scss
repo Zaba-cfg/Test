@@ -44,7 +44,6 @@ main {
                 scroll-snap-type: x mandatory;
                 overflow-x: scroll;
                 scroll-padding: 30px;
-                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
                 scrollbar-width: none;
 
                 .card {
@@ -55,7 +54,7 @@ main {
                     padding: 1rem;
                     border-radius: 12px;
                     background: $negro;
-                    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+                    border: solid $gris 2px;
 
                     .image {
                         padding: .7rem;
