@@ -15,7 +15,7 @@ fetch("./products/termos.json")
             <div class="card">
                <div class="image">
                   <a class="comprar" href="${producto.link}" target="_blank">
-                     <img src="${producto.img1}" alt="producto" />
+                     <img src="${producto.img1}" alt="producto" loading="lazy" />
                      <i class="bi bi-whatsapp carrito"></i>
                   </a>
                </div>
@@ -29,7 +29,7 @@ fetch("./products/termos.json")
             </div>
             <div class="card">
                <div class="image">
-                  <img src="${producto.img2}" alt="producto" />
+                  <img src="${producto.img2}" alt="producto" loading="lazy" />
                </div>
                <p class="description">${producto.descripcion1}</p>
                <div>
@@ -90,7 +90,7 @@ fetch("./products/termos13.json")
             <div class="card">
                <div class="image">
                   <a class="comprar" href="${producto.link}" target="_blank">
-                     <img src="${producto.img1}" alt="producto" />
+                     <img src="${producto.img1}" alt="producto" loading="lazy" />
                      <i class="bi bi-whatsapp carrito"></i>
                   </a>
                </div>
@@ -104,7 +104,7 @@ fetch("./products/termos13.json")
             </div>
             <div class="card">
                <div class="image">
-                  <img src="${producto.img2}" alt="producto" />
+                  <img src="${producto.img2}" alt="producto" loading="lazy" />
                </div>
                <p class="description">${producto.descripcion1}</p>
                <div>
