@@ -17,6 +17,10 @@ $color in $colores_productos {
         color: $color;
         font-size: 20px;
     }
+
+    .#{$color_producto}:active {
+        transform: none !important;
+    }
 }
 
 // Map para el color de los icons

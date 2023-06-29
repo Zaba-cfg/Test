@@ -29,6 +29,8 @@ main {
                 text-align: center;
                 padding-top: 2rem;
                 padding-bottom: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
             }
         }
 
@@ -37,9 +39,8 @@ main {
 
             .container-cards {
                 display: flex;
+                height: auto;
                 gap: 2rem;
-                max-width: 380px;
-                width: 100%;
                 padding: 15px;
                 scroll-snap-type: x mandatory;
                 overflow-x: scroll;
@@ -47,6 +48,8 @@ main {
                 scrollbar-width: none;
 
                 .card {
+                    width: 160px;
+                    height: auto;
                     display: flex;
                     flex: 0 0 100%;
                     flex-direction: column;
@@ -58,12 +61,9 @@ main {
 
                     .image {
                         padding: .7rem;
+                        position: relative;
 
                         .comprar {
-                            position: relative;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
 
                             .carrito {
                                 position: absolute;
@@ -73,13 +73,15 @@ main {
                                 font-size: 1.7rem;
                                 background-color: var(--clr-background);
                                 padding: .5rem;
+                                margin-left: 5px;
+                                margin-top: 5px;
                                 border-bottom-right-radius: 1rem;
                             }
                         }
 
                         img {
-                            height: 300px;
                             width: 100%;
+                            height: 330px;
                             border-radius: 1rem;
                         }
                     }

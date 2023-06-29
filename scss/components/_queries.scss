@@ -10,128 +10,145 @@
 
         body {
             background-color: rgba(0, 0, 0, .4) !important;
-        }
 
-        header {
+            header {
 
-            // Menú hamburguesa
-            // Botones del menú
+                // Menú hamburguesa
+                // Botones del menú
 
-            .abrir-menu,
-            .cerrar-menu {
-                display: block;
-                border: 0;
-                font-size: 1.4em;
-                background-color: transparent;
-                cursor: pointer;
-                color: var(--clr-text);
-            }
-
-            // Navbar menú
-
-            .navbar {
-                opacity: 0;
-                visibility: hidden;
-                display: flex;
-                flex-direction: column;
-                position: fixed;
-                align-items: end;
-                gap: 1rem;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                width: 11.5rem;
-                background-color: var(--clr-background);
-                padding: 2rem;
-                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-                transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-                z-index: 99;
-                transform: translateX(100%);
-            }
-
-            // Clase que muestra y esconde el menú
-
-            .visible {
-                opacity: 1;
-                visibility: visible;
-                transform: translateX(0%);
-            }
-
-            // Ítems de la lista
-
-            nav {
-                .navbar-list {
-                    flex-direction: column;
-                    align-items: end;
+                .abrir-menu,
+                .cerrar-menu {
+                    display: block;
+                    border: 0;
+                    font-size: 1.4em;
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: var(--clr-text);
                 }
 
-                li {
-                    .navbar-item-link {
-                        color: var(--clr-text);
-                        transition: color 0.3s ease;
-                    }
+                // Navbar menú
 
-                    // Dropdown
-
-                    .dropdown-content {
-                        right: 0;
-                    }
-                }
-
-                .header-icons {
-                    width: 100%;
-                    margin-top: 2rem;
-                    display: flex !important;
-                    justify-content: space-around;
-                    align-items: center;
-                }
-            }
-        }
-
-        main {
-            section {
-
-                // Slider de mobile
-
-                .slider {
-                    aspect-ratio: 10/10;
-                    overflow: scroll;
-                    height: auto;
-                    width: 100%;
-                    position: relative;
+                .navbar {
+                    opacity: 0;
+                    visibility: hidden;
                     display: flex;
-                    scroll-snap-type: x mandatory;
-                    margin-bottom: 4rem;
-                    margin-top: 4rem;
+                    flex-direction: column;
+                    position: fixed;
+                    align-items: end;
+                    gap: 1rem;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 11.5rem;
                     background-color: var(--clr-background);
-                    border-top: groove var(--clr-text) 10px;
-                    border-bottom: groove var(--clr-text) 10px;
+                    padding: 2rem;
+                    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+                    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+                    z-index: 99;
+                    transform: translateX(100%);
+                }
 
-                    img {
+                // Clase que muestra y esconde el menú
+
+                .visible {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateX(0%);
+                }
+
+                // Ítems de la lista
+
+                nav {
+                    .navbar-list {
+                        flex-direction: column;
+                        align-items: end;
+                    }
+
+                    li {
+                        .navbar-item-link {
+                            color: var(--clr-text);
+                            transition: color 0.3s ease;
+                        }
+
+                        // Dropdown
+
+                        .dropdown-content {
+                            right: 0;
+                        }
+                    }
+
+                    .header-icons {
+                        width: 100%;
+                        margin-top: 2rem;
+                        display: flex !important;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+            }
+
+            main {
+                section {
+                    .container {
+                        .container-cards {
+                            .card {
+                                .image {
+                                    img {
+                                        height: unset;
+                                        max-height: 330px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Slider de mobile
+
+                    .slider {
+                        aspect-ratio: 10/10;
+                        overflow: scroll;
                         height: auto;
-                        width: auto;
-                        left: 0;
-                        position: sticky;
-                        object-fit: cover;
-                        scroll-snap-align: center;
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        scroll-snap-type: x mandatory;
+                        margin-bottom: 4rem;
+                        margin-top: 4rem;
+                        background-color: var(--clr-background);
+                        border-top: groove var(--clr-text) 10px;
+                        border-bottom: groove var(--clr-text) 10px;
+
+                        img {
+                            height: auto;
+                            width: auto;
+                            left: 0;
+                            position: sticky;
+                            object-fit: cover;
+                            scroll-snap-align: center;
+                        }
                     }
-                }
 
-                div {
+                    div {
 
-                    // Ocultar carrousel para solo mostrar el slider
+                        // Ocultar carrousel para solo mostrar el slider
 
-                    .wrapper {
-                        display: none;
+                        .wrapper {
+                            display: none;
+                        }
                     }
-                }
 
-                // Ocultar botones de redes
+                    // Ocultar botones de redes
 
-                .hidden_mobile {
-                    display: none !important;
+                    .hidden_mobile {
+                        display: none !important;
+                    }
                 }
             }
         }
     }
+}
+
+.typewriter {
+    height: 12rem;
+    font-size: 2.5rem;
 }

@@ -32,29 +32,50 @@
   color: #383838;
   font-size: 20px; }
 
+.negro:active {
+  transform: none !important; }
+
 .rosa {
   color: #deac9c;
   font-size: 20px; }
+
+.rosa:active {
+  transform: none !important; }
 
 .blanco {
   color: #cbcbcb;
   font-size: 20px; }
 
+.blanco:active {
+  transform: none !important; }
+
 .verde {
   color: #67917a;
   font-size: 20px; }
+
+.verde:active {
+  transform: none !important; }
 
 .rojo {
   color: #a1373a;
   font-size: 20px; }
 
+.rojo:active {
+  transform: none !important; }
+
 .azul {
   color: #0e4166;
   font-size: 20px; }
 
+.azul:active {
+  transform: none !important; }
+
 .naranja {
   color: #fb795d;
   font-size: 20px; }
+
+.naranja:active {
+  transform: none !important; }
 
 .bi-facebook:hover {
   color: #77c8e3; }
@@ -113,21 +134,24 @@ main section div .titulo-sin-stock {
   font-size: 3rem;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 main section .container {
   gap: 2rem; }
   main section .container .container-cards {
     display: flex;
+    height: auto;
     gap: 2rem;
-    max-width: 380px;
-    width: 100%;
     padding: 15px;
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     scroll-padding: 30px;
     scrollbar-width: none; }
     main section .container .container-cards .card {
+      width: 160px;
+      height: auto;
       display: flex;
       flex: 0 0 100%;
       flex-direction: column;
@@ -137,24 +161,22 @@ main section .container {
       background: var(--clr-background);
       border: solid var(--clr-primary) 2px; }
       main section .container .container-cards .card .image {
-        padding: .7rem; }
-        main section .container .container-cards .card .image .comprar {
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center; }
-          main section .container .container-cards .card .image .comprar .carrito {
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: var(--clr-green);
-            font-size: 1.7rem;
-            background-color: var(--clr-background);
-            padding: .5rem;
-            border-bottom-right-radius: 1rem; }
+        padding: .7rem;
+        position: relative; }
+        main section .container .container-cards .card .image .comprar .carrito {
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: var(--clr-green);
+          font-size: 1.7rem;
+          background-color: var(--clr-background);
+          padding: .5rem;
+          margin-left: 5px;
+          margin-top: 5px;
+          border-bottom-right-radius: 1rem; }
         main section .container .container-cards .card .image img {
-          height: 300px;
           width: 100%;
+          height: 330px;
           border-radius: 1rem; }
       main section .container .container-cards .card h2 {
         font-size: 20px;
@@ -253,9 +275,7 @@ main section .container-carousel {
   padding: 1rem;
   margin-top: 2rem;
   color: var(--clr-light);
-  font-size: 2.5rem;
-  width: 100vw;
-  height: 20vh; }
+  font-size: 3.5rem; }
 
 .typewriter-item {
   background-color: var(--clr-background);
@@ -405,7 +425,7 @@ main section #btn-scroll-home {
   position: fixed;
   border: solid #282828 2px;
   border-radius: 50%;
-  background-color: var(--foreground);
+  background-color: var(--clr-light);
   bottom: 0;
   right: 0;
   margin: 2rem; }
@@ -413,7 +433,7 @@ main section #btn-scroll-home {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--background);
+    color: var(--clr-dark);
     font-size: 1rem; }
 
 /* Títulos generales */
@@ -434,71 +454,78 @@ main section #btn-scroll-home {
     background-repeat: repeat-y !important; }
     html body {
       background-color: rgba(0, 0, 0, 0.4) !important; }
-    html header .abrir-menu,
-    html header .cerrar-menu {
-      display: block;
-      border: 0;
-      font-size: 1.4em;
-      background-color: transparent;
-      cursor: pointer;
-      color: var(--clr-text); }
-    html header .navbar {
-      opacity: 0;
-      visibility: hidden;
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      align-items: end;
-      gap: 1rem;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 11.5rem;
-      background-color: var(--clr-background);
-      padding: 2rem;
-      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-      z-index: 99;
-      transform: translateX(100%); }
-    html header .visible {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(0%); }
-    html header nav .navbar-list {
-      flex-direction: column;
-      align-items: end; }
-    html header nav li .navbar-item-link {
-      color: var(--clr-text);
-      transition: color 0.3s ease; }
-    html header nav li .dropdown-content {
-      right: 0; }
-    html header nav .header-icons {
-      width: 100%;
-      margin-top: 2rem;
-      display: flex !important;
-      justify-content: space-around;
-      align-items: center; }
-    html main section .slider {
-      aspect-ratio: 10/10;
-      overflow: scroll;
-      height: auto;
-      width: 100%;
-      position: relative;
-      display: flex;
-      scroll-snap-type: x mandatory;
-      margin-bottom: 4rem;
-      margin-top: 4rem;
-      background-color: var(--clr-background);
-      border-top: groove var(--clr-text) 10px;
-      border-bottom: groove var(--clr-text) 10px; }
-      html main section .slider img {
+      html body header .abrir-menu,
+      html body header .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.4em;
+        background-color: transparent;
+        cursor: pointer;
+        color: var(--clr-text); }
+      html body header .navbar {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: end;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 11.5rem;
+        background-color: var(--clr-background);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        z-index: 99;
+        transform: translateX(100%); }
+      html body header .visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%); }
+      html body header nav .navbar-list {
+        flex-direction: column;
+        align-items: end; }
+      html body header nav li .navbar-item-link {
+        color: var(--clr-text);
+        transition: color 0.3s ease; }
+      html body header nav li .dropdown-content {
+        right: 0; }
+      html body header nav .header-icons {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex !important;
+        justify-content: space-around;
+        align-items: center; }
+      html body main section .container .container-cards .card .image img {
+        height: unset;
+        max-height: 330px !important; }
+      html body main section .slider {
+        aspect-ratio: 10/10;
+        overflow: scroll;
         height: auto;
-        width: auto;
-        left: 0;
-        position: sticky;
-        object-fit: cover;
-        scroll-snap-align: center; }
-    html main section div .wrapper {
-      display: none; }
-    html main section .hidden_mobile {
-      display: none !important; } }
+        width: 100%;
+        position: relative;
+        display: flex;
+        scroll-snap-type: x mandatory;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        background-color: var(--clr-background);
+        border-top: groove var(--clr-text) 10px;
+        border-bottom: groove var(--clr-text) 10px; }
+        html body main section .slider img {
+          height: auto;
+          width: auto;
+          left: 0;
+          position: sticky;
+          object-fit: cover;
+          scroll-snap-align: center; }
+      html body main section div .wrapper {
+        display: none; }
+      html body main section .hidden_mobile {
+        display: none !important; } }
+
+.typewriter {
+  height: 12rem;
+  font-size: 2.5rem; }
