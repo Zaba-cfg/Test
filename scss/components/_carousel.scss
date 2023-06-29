@@ -9,7 +9,7 @@ main {
             align-items: center;
 
             .wrapper {
-                background-color: $negro;
+                background-color: var(--clr-background);
                 max-width: 1200px;
                 position: relative;
                 margin-top: 5rem;
@@ -21,13 +21,13 @@ main {
                     top: 50%;
                     height: 44px;
                     width: 44px;
-                    color: $blanco;
+                    color: var(--clr-text);
                     cursor: pointer;
                     font-size: 2em;
                     position: absolute;
                     text-align: center;
                     line-height: 44px;
-                    background: $negro;
+                    background: var(--clr-background);
                     border-radius: 50%;
                 }
 

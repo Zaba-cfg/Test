@@ -1,6 +1,34 @@
 // Colores
 
-$blanco: #ececec;
-$negro: #1c1c1c;
-$negro_opaco: #282828;
-$gris : #414141;
+:root {
+    --clr-light: #ececec;
+    --clr-dark: #1c1c1c;
+    --clr-green: rgb(0, 165, 0);
+    --clr-primary: #adadad;
+    --clr-secondary: #3b3b3b;
+    --clr-background: #ececec;
+    --clr-hover-background: #c4c4c4;
+    --clr-text: #1c1c1c;
+    --clr-hover-text: #000000;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ff-title: "Playfair Display", serif;
+    --ff-body: "Assistant", sans-serif;
+}
+
+.darkmode {
+    --clr-light: #ececec;
+    --clr-dark: #1c1c1c;
+    --clr-green: rgb(107, 215, 107);
+    --clr-primary: #393939;
+    --clr-secondary: #cfcfcf;
+    --clr-background: #1c1c1c;
+    --clr-hover-background: #262626;
+    --clr-text: #ececec;
+    --clr-hover-text: #ffffff;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}

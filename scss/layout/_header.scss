@@ -6,10 +6,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1.3rem 3rem 1.3rem 3rem;
-    background-color: #1c1c1c;
+    background-color: var(--clr-background);
 
     a {
-        color: #ececec;
+        color: var(--clr-text);
         touch-action: manipulation;
 
         .logo {
@@ -25,15 +25,19 @@ header {
             display: flex;
             justify-content: space-between;
 
+            #dark-mode-toggle {
+                color: var(--clr-text);
+            }
+
             .navbar-item {
                 list-style: none;
 
                 .navbar-item-link {
-                    color: rgb(175, 175, 175);
+                    color: var(--clr-secondary);
                 }
 
                 .navbar-item-link:hover {
-                    color: #ececec;
+                    color: var(--clr-hover-text);
                 }
             }
 
@@ -49,7 +53,7 @@ header {
                     display: none;
                     margin-top: 10px;
                     position: absolute;
-                    background-color: #222222;
+                    background-color: var(--clr-background);
                     min-width: 7rem;
                     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                     z-index: 97;
@@ -58,14 +62,13 @@ header {
                     animation-timing-function: ease-in-out;
 
                     a {
-                        color: #ececec;
                         padding: 12px 16px;
                         text-decoration: none;
                         display: block;
                     }
 
                     a:hover {
-                        background-color: #272727;
+                        background-color: var(--clr-hover-background);
                     }
                 }
 

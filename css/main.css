@@ -1,5 +1,33 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --clr-light: #ececec;
+  --clr-dark: #1c1c1c;
+  --clr-green: rgb(0, 165, 0);
+  --clr-primary: #adadad;
+  --clr-secondary: #3b3b3b;
+  --clr-background: #ececec;
+  --clr-hover-background: #c4c4c4;
+  --clr-text: #1c1c1c;
+  --clr-hover-text: #000000;
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+  --ff-title: "Playfair Display", serif;
+  --ff-body: "Assistant", sans-serif; }
+
+.darkmode {
+  --clr-light: #ececec;
+  --clr-dark: #1c1c1c;
+  --clr-green: rgb(107, 215, 107);
+  --clr-primary: #393939;
+  --clr-secondary: #cfcfcf;
+  --clr-background: #1c1c1c;
+  --clr-hover-background: #262626;
+  --clr-text: #ececec;
+  --clr-hover-text: #ffffff;
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark); }
+
 .negro {
   color: #383838;
   font-size: 20px; }
@@ -9,7 +37,7 @@
   font-size: 20px; }
 
 .blanco {
-  color: #ececec;
+  color: #cbcbcb;
   font-size: 20px; }
 
 .verde {
@@ -32,7 +60,7 @@
   color: #77c8e3; }
 
 .bi-facebook {
-  color: #ececec;
+  color: var(--clr-text);
   font-size: 1.5rem;
   transition: all .2s; }
 
@@ -40,7 +68,7 @@
   color: violet; }
 
 .bi-tiktok {
-  color: #ececec;
+  color: var(--clr-text);
   font-size: 1.5rem;
   transition: all .2s; }
 
@@ -48,7 +76,7 @@
   color: lightsalmon; }
 
 .bi-instagram {
-  color: #ececec;
+  color: var(--clr-text);
   font-size: 1.5rem;
   transition: all .2s; }
 
@@ -56,7 +84,7 @@
   color: lightgreen; }
 
 .bi-whatsapp {
-  color: #ececec;
+  color: var(--clr-text);
   font-size: 1.5rem;
   transition: all .2s; }
 
@@ -81,7 +109,7 @@ main section #contenedorBotellas {
 
 main section div .titulo-sin-stock {
   color: red;
-  background-color: #ececec;
+  background-color: var(--clr-light);
   font-size: 3rem;
   text-align: center;
   padding-top: 2rem;
@@ -106,8 +134,8 @@ main section .container {
       justify-content: space-between;
       padding: 1rem;
       border-radius: 12px;
-      background: #1c1c1c;
-      border: solid #414141 2px; }
+      background: var(--clr-background);
+      border: solid var(--clr-primary) 2px; }
       main section .container .container-cards .card .image {
         padding: .7rem; }
         main section .container .container-cards .card .image .comprar {
@@ -119,9 +147,9 @@ main section .container {
             position: absolute;
             left: 0;
             top: 0;
-            color: #73dc73;
+            color: var(--clr-green);
             font-size: 1.7rem;
-            background-color: #1c1c1c;
+            background-color: var(--clr-background);
             padding: .5rem;
             border-bottom-right-radius: 1rem; }
         main section .container .container-cards .card .image img {
@@ -130,23 +158,23 @@ main section .container {
           border-radius: 1rem; }
       main section .container .container-cards .card h2 {
         font-size: 20px;
-        color: #ececec;
+        color: var(--clr-text);
         font-weight: bold;
         text-align: center; }
       main section .container .container-cards .card p {
         margin-top: 4px;
         font-size: 18px;
-        color: #ececec;
+        color: var(--clr-text);
         font-weight: bold; }
       main section .container .container-cards .card .description {
         margin-top: 10px;
-        color: #ececec;
+        color: var(--clr-text);
         font-size: 18px;
         text-align: start;
         font-weight: bold; }
       main section .container .container-cards .card .precio {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #89e689 !important; }
+        color: var(--clr-green) !important; }
       main section .container .container-cards .card div .btn-left,
       main section .container .container-cards .card div .btn-right {
         display: flex;
@@ -154,11 +182,11 @@ main section .container {
         justify-content: center;
         cursor: pointer;
         font-size: 2.5em;
-        color: #414141;
+        color: var(--clr-primary);
         transition: all .3s; }
       main section .container .container-cards .card div .btn-left:hover,
       main section .container .container-cards .card div .btn-right:hover {
-        color: #ececec; }
+        color: var(--clr-hover-text); }
   main section .container .container-cards::-webkit-scrollbar {
     width: 0px; }
 
@@ -168,7 +196,7 @@ main section .container-carousel {
   justify-content: center;
   align-items: center; }
   main section .container-carousel .wrapper {
-    background-color: #1c1c1c;
+    background-color: var(--clr-background);
     max-width: 1200px;
     position: relative;
     margin-top: 5rem;
@@ -179,13 +207,13 @@ main section .container-carousel {
       top: 50%;
       height: 44px;
       width: 44px;
-      color: #ececec;
+      color: var(--clr-text);
       cursor: pointer;
       font-size: 2em;
       position: absolute;
       text-align: center;
       line-height: 44px;
-      background: #1c1c1c;
+      background: var(--clr-background);
       border-radius: 50%; }
     main section .container-carousel .wrapper i:first-child {
       left: -22px;
@@ -217,22 +245,22 @@ main section .container-carousel {
   padding: 1rem;
   margin-top: 4rem;
   color: red;
-  background-color: #ececec;
+  background-color: var(--clr-background);
   font-size: 2.5rem; }
 
 .typewriter {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  color: #ececec;
+  color: var(--clr-light);
   font-size: 2.5rem;
   width: 100vw;
   height: 20vh; }
 
 .typewriter-item {
-  background-color: antiquewhite;
+  background-color: var(--clr-background);
   text-align: left;
-  color: black;
+  color: var(--clr-text);
   font-weight: bold; }
 
 @keyframes dropdownAnimation {
@@ -244,7 +272,7 @@ main section .container-carousel {
     transform: translateY(0); } }
 
 footer {
-  background-color: #1c1c1c;
+  background-color: var(--clr-background);
   height: 10vh; }
 
 * {
@@ -270,6 +298,20 @@ a:active {
 li {
   list-style-type: none; }
 
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 i,
 button {
   transition: transform 0.1s linear; }
@@ -290,9 +332,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.3rem 3rem 1.3rem 3rem;
-  background-color: #1c1c1c; }
+  background-color: var(--clr-background); }
   header a {
-    color: #ececec;
+    color: var(--clr-text);
     touch-action: manipulation; }
     header a .logo {
       font-family: 'Bebas Neue', sans-serif;
@@ -301,12 +343,14 @@ header {
     gap: 2rem;
     display: flex;
     justify-content: space-between; }
+    header .navbar .navbar-list #dark-mode-toggle {
+      color: var(--clr-text); }
     header .navbar .navbar-list .navbar-item {
       list-style: none; }
       header .navbar .navbar-list .navbar-item .navbar-item-link {
-        color: #afafaf; }
+        color: var(--clr-secondary); }
       header .navbar .navbar-list .navbar-item .navbar-item-link:hover {
-        color: #ececec; }
+        color: var(--clr-hover-text); }
     header .navbar .navbar-list .dropdown {
       position: relative;
       display: inline-block; }
@@ -316,7 +360,7 @@ header {
         display: none;
         margin-top: 10px;
         position: absolute;
-        background-color: #222222;
+        background-color: var(--clr-background);
         min-width: 7rem;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 97;
@@ -324,12 +368,11 @@ header {
         animation-duration: 0.3s;
         animation-timing-function: ease-in-out; }
         header .navbar .navbar-list .dropdown .dropdown-content a {
-          color: #ececec;
           padding: 12px 16px;
           text-decoration: none;
           display: block; }
         header .navbar .navbar-list .dropdown .dropdown-content a:hover {
-          background-color: #272727; }
+          background-color: var(--clr-hover-background); }
       header .navbar .navbar-list .dropdown .show {
         display: block; }
   header .navbar .header-icons {
@@ -342,7 +385,7 @@ main section .container-redes {
   gap: 4rem;
   margin-bottom: 4rem; }
   main section .container-redes a {
-    background-color: #1c1c1c;
+    background-color: var(--clr-background);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -362,7 +405,7 @@ main section #btn-scroll-home {
   position: fixed;
   border: solid #282828 2px;
   border-radius: 50%;
-  background-color: #ececec;
+  background-color: var(--foreground);
   bottom: 0;
   right: 0;
   margin: 2rem; }
@@ -370,15 +413,15 @@ main section #btn-scroll-home {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1c1c1c;
+    color: var(--background);
     font-size: 1rem; }
 
 /* Títulos generales */
 .titulos {
   padding: 1.5rem;
-  color: #ececec;
+  color: var(--clr-text);
   opacity: .9;
-  background-color: #282828;
+  background-color: var(--clr-background);
   font-size: 2.4em;
   display: flex;
   text-align: center;
@@ -398,7 +441,7 @@ main section #btn-scroll-home {
       font-size: 1.4em;
       background-color: transparent;
       cursor: pointer;
-      color: #ececec; }
+      color: var(--clr-text); }
     html header .navbar {
       opacity: 0;
       visibility: hidden;
@@ -411,7 +454,7 @@ main section #btn-scroll-home {
       right: 0;
       bottom: 0;
       width: 11.5rem;
-      background-color: #1c1c1c;
+      background-color: var(--clr-background);
       padding: 2rem;
       box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
       transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
@@ -425,7 +468,7 @@ main section #btn-scroll-home {
       flex-direction: column;
       align-items: end; }
     html header nav li .navbar-item-link {
-      color: #ececec;
+      color: var(--clr-text);
       transition: color 0.3s ease; }
     html header nav li .dropdown-content {
       right: 0; }
@@ -445,9 +488,9 @@ main section #btn-scroll-home {
       scroll-snap-type: x mandatory;
       margin-bottom: 4rem;
       margin-top: 4rem;
-      background-color: #ececec;
-      border-top: groove #ececec 10px;
-      border-bottom: groove #ececec 10px; }
+      background-color: var(--clr-background);
+      border-top: groove var(--clr-text) 10px;
+      border-bottom: groove var(--clr-text) 10px; }
       html main section .slider img {
         height: auto;
         width: auto;

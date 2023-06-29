@@ -24,7 +24,7 @@
                 font-size: 1.4em;
                 background-color: transparent;
                 cursor: pointer;
-                color: $blanco;
+                color: var(--clr-text);
             }
 
             // Navbar menú
@@ -41,7 +41,7 @@
                 right: 0;
                 bottom: 0;
                 width: 11.5rem;
-                background-color: $negro;
+                background-color: var(--clr-background);
                 padding: 2rem;
                 box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
                 transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
@@ -67,7 +67,7 @@
 
                 li {
                     .navbar-item-link {
-                        color: $blanco;
+                        color: var(--clr-text);
                         transition: color 0.3s ease;
                     }
 
@@ -103,9 +103,9 @@
                     scroll-snap-type: x mandatory;
                     margin-bottom: 4rem;
                     margin-top: 4rem;
-                    background-color: $blanco;
-                    border-top: groove $blanco 10px;
-                    border-bottom: groove $blanco 10px;
+                    background-color: var(--clr-background);
+                    border-top: groove var(--clr-text) 10px;
+                    border-bottom: groove var(--clr-text) 10px;
 
                     img {
                         height: auto;

@@ -3,7 +3,7 @@
 $colores_productos: (
     negro: #383838,
     rosa: #deac9c,
-    blanco: #ececec,
+    blanco: #cbcbcb,
     verde: #67917a,
     rojo: #a1373a,
     azul: #0e4166,
@@ -36,7 +36,7 @@ $color in $colores_icons {
     }
 
     .#{$color_icon} {
-        color: $blanco;
+        color: var(--clr-text);
         font-size: 1.5rem;
         transition: all .2s;
     }

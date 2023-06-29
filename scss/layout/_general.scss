@@ -24,6 +24,7 @@ html {
         radial-gradient(farthest-side at 50% -33.33%, var(--_g)),
         #67917A;
     background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
+
     scroll-behavior: smooth;
 }
 
@@ -38,6 +39,23 @@ a:active {
 
 li {
     list-style-type: none;
+}
+
+// Reset de botones
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    line-height: normal;
+    padding: 0;
+    text-align: inherit;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 // Animación al presionar los botones y icons del sitio

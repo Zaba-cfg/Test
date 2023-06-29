@@ -12,7 +12,7 @@ main {
             position: fixed;
             border: solid #282828 2px;
             border-radius: 50%;
-            background-color: $blanco;
+            background-color: var(--foreground);
             bottom: 0;
             right: 0;
             margin: 2rem;
@@ -21,7 +21,7 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: $negro;
+                color: var(--background);
                 font-size: 1rem;
             }
         }
