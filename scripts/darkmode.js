@@ -2,12 +2,16 @@
 let darkMode = localStorage.getItem("darkMode")
 
 const darkModeToggle = document.querySelector("#dark-mode-toggle")
+const iconElement = document.getElementById("dark-mode-icon")
 
 const enableDarkMode = () => {
    // 1. Add the class to the body
    document.body.classList.add("darkmode")
    // 2. Update darkMode in localStorage
    localStorage.setItem("darkMode", "enabled")
+   // 3. Update the icon
+   iconElement.classList.remove("bi-sun")
+   iconElement.classList.add("bi-moon-stars")
 }
 
 const disableDarkMode = () => {
@@ -15,6 +19,9 @@ const disableDarkMode = () => {
    document.body.classList.remove("darkmode")
    // 2. Update darkMode in localStorage
    localStorage.setItem("darkMode", null)
+   // 3. Update the icon
+   iconElement.classList.remove("bi-moon-stars")
+   iconElement.classList.add("bi-sun")
 }
 
 // If the user already visited and enabled darkMode
@@ -28,27 +35,11 @@ darkModeToggle.addEventListener("click", () => {
    // get their darkMode setting
    darkMode = localStorage.getItem("darkMode")
 
-   // if it not current enabled, enable it
+   // if it's not currently enabled, enable it
    if (darkMode !== "enabled") {
       enableDarkMode()
-      // if it has been enabled, turn it off
    } else {
+      // if it has been enabled, turn it off
       disableDarkMode()
    }
 })
-
-// Toggle icon
-let darkModeIcon = false
-const buttonElement = document.getElementById("dark-mode-toggle")
-const iconElement = document.getElementById("dark-mode-icon")
-
-function toggleMode() {
-   darkModeIcon = !darkModeIcon
-   if (darkModeIcon) {
-      iconElement.classList.remove("bi-sun")
-      iconElement.classList.add("bi-moon-stars")
-   } else {
-      iconElement.classList.remove("bi-moon-stars")
-      iconElement.classList.add("bi-sun")
-   }
-}
