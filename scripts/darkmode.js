@@ -36,3 +36,19 @@ darkModeToggle.addEventListener("click", () => {
       disableDarkMode()
    }
 })
+
+// Toggle icon
+let darkModeIcon = false
+const buttonElement = document.getElementById("dark-mode-toggle")
+const iconElement = document.getElementById("dark-mode-icon")
+
+function toggleMode() {
+   darkModeIcon = !darkModeIcon
+   if (darkModeIcon) {
+      iconElement.classList.remove("bi-sun")
+      iconElement.classList.add("bi-moon-stars")
+   } else {
+      iconElement.classList.remove("bi-moon-stars")
+      iconElement.classList.add("bi-sun")
+   }
+}

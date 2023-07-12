@@ -26,7 +26,8 @@
   --clr-text: #ececec;
   --clr-hover-text: #ffffff;
   --foreground: var(--clr-light);
-  --background: var(--clr-dark); }
+  --background: var(--clr-dark);
+  --ff-class: bi-moon-stars-fill; }
 
 .negro {
   color: #383838;
@@ -272,6 +273,7 @@ main section .container-carousel {
 
 .typewriter {
   text-align: center;
+  height: 20vh;
   padding: 1rem;
   margin-top: 2rem;
   color: var(--clr-light);
@@ -498,6 +500,9 @@ main section #btn-scroll-home {
         display: flex !important;
         justify-content: space-around;
         align-items: center; }
+      html body main section .typewriter {
+        height: 12rem;
+        font-size: 2.5rem; }
       html body main section .container .container-cards .card .image img {
         height: unset;
         max-height: 330px !important; }
@@ -525,7 +530,3 @@ main section #btn-scroll-home {
         display: none; }
       html body main section .hidden_mobile {
         display: none !important; } }
-
-.typewriter {
-  height: 12rem;
-  font-size: 2.5rem; }

@@ -89,6 +89,12 @@
 
             main {
                 section {
+
+                    .typewriter {
+                        height: 12rem;
+                        font-size: 2.5rem;
+                    }
+
                     .container {
                         .container-cards {
                             .card {
@@ -146,9 +152,4 @@
             }
         }
     }
-}
-
-.typewriter {
-    height: 12rem;
-    font-size: 2.5rem;
 }

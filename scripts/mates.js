@@ -29,7 +29,7 @@ fetch("./products/mates.json")
             </div>
             <div class="card">
                <div class="image">
-                  <img src="${producto.img2}" alt="producto" loading="lazy" />
+                  <img src="${producto.img2}" alt="producto" />
                </div>
                <p class="description">${producto.descripcion1}</p>
                <div>
