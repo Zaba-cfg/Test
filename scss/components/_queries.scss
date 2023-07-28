@@ -88,6 +88,18 @@
             }
 
             main {
+                .container-productos {
+                    gap: 5rem;
+                    margin: 0 0 3rem 0;
+                    grid-template-columns: 16rem;
+                    grid-template-rows: 16rem 16rem 16rem 16rem;
+                    grid-template-areas:
+                        "a"
+                        "b"
+                        "c"
+                        "d";
+                }
+
                 section {
 
                     .typewriter {

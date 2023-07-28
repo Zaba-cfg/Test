@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Encuentra una amplia selección de mates y termos Stanley de alta calidad. Compra ahora y disfruta del mejor mate argentino." />
+    <meta name="keyword" content="mate stanley, termo stanley original, termo stanley rosa, stanley termo, termos stanley originales, termo stanley 1 litro" />
+
+    <!-- Open Graph -->
+    <meta property="og:image" content="https://i.ibb.co/4Y6vrvj/logo-marca.jpg" alt="logo-marca" />
+    <meta property="og:title" content="Termos Stanley - Tienda en línea" />
+    <meta property="og:description" content="Encuentra una amplia selección de mates y termos Stanley de alta calidad. Compra ahora y disfruta del mejor mate argentino." />
+    <meta property="og:url" content="http://www.example.com/tienda/mates-termos-stanley">
+    <meta property="og:type" content="product">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/mate.webp" type="image/x-icon" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Librerías -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Title -->
+    <title>Termos Stanley - Tienda en línea</title>
+</head>
+
+<body id="inicio">
+
+    <!-- Comienzo header -->
+    <header>
+        <a href="../index.html">
+            <h2 class="logo">matermo.dibatt</h2>
+        </a>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-list">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <li class="navbar-item">
+                    <a class="navbar-item-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="navbar-item dropdown">
+                    <a class="navbar-item-link dropbtn">Termos</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./termos.html">De 1LT</a>
+                        <a href="./termos13.html">De 1.3LT</a>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-item-link" href="./botellas.html">Botellas</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-item-link" href="./mates.html">Mates</a>
+                </li>
+                <button id="dark-mode-toggle">
+                    <i class="bi bi-sun" id="dark-mode-icon"></i>
+                </button>
+            </ul>
+            <div class="header-icons hidden">
+                <a href="https://www.instagram.com/matermo.dibatt/" target="_blank">
+                    <i class="bi bi-instagram navbar-item-link"></i>
+                </a>
+                <a href="https://www.tiktok.com/@joacodibattista1" target="_blank">
+                    <i class="bi bi-tiktok navbar-item-link"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="bi bi-facebook navbar-item-link"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin header -->
+
+    <!-- Comienzo main -->
+    <main>
+        <section>
+            <a href="#inicio" id="btn-scroll-home" data-aos="fade-up">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+            <h2 class="titulos" id="botellas">TERMOS 1.3L</h2>
+            <div class="container" id="contenedorTermos13"></div>
+        </section>
+    </main>
+    <!-- Fin main -->
+
+    <!-- Comienzo footer -->
+    <footer id="contacto">
+        <p>@matermo.dibatt</p>
+    </footer>
+    <!-- Fin footer -->
+
+    <!-- Librerías -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Script productos-->
+    <script src="../scripts/termos13.js"></script>
+
+    <!-- Script animaciones y otros-->
+    <script src="../scripts/darkmode.js"></script>
+    <script src="../scripts/hamburguer.js"></script>
+</body>
+
+</html>

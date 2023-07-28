@@ -26,4 +26,48 @@ main {
             }
         }
     }
+
+    .container-productos {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        display: grid;
+        gap: 8rem;
+        justify-content: center;
+        grid-template-columns: 16rem 16rem;
+        grid-template-rows: 16rem 16rem;
+        grid-template-areas:
+            "a b"
+            "c d";
+
+        #termos1l {
+            grid-area: a;
+        }
+
+        #termos13l {
+            grid-area: b;
+        }
+
+        #botellas {
+            grid-area: c;
+        }
+
+        #mates {
+            grid-area: d;
+        }
+
+        #termos1l,
+        #termos13l,
+        #botellas,
+        #mates {
+            font-size: 2rem;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--clr-background);
+            padding: 20px;
+            border-radius: 20%;
+            color: var(--clr-text);
+        }
+    }
 }

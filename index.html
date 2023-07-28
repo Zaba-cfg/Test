@@ -12,7 +12,7 @@
 
     <!-- Open Graph -->
     <meta property="og:image" content="https://i.ibb.co/4Y6vrvj/logo-marca.jpg" alt="logo-marca" />
-    <meta property="og:title" content="Mates y termos Stanley - Tienda en línea" />
+    <meta property="og:title" content="MATERMO.DIBATT - Tienda en línea" />
     <meta property="og:description" content="Encuentra una amplia selección de mates y termos Stanley de alta calidad. Compra ahora y disfruta del mejor mate argentino." />
     <meta property="og:url" content="http://www.example.com/tienda/mates-termos-stanley">
     <meta property="og:type" content="product">
@@ -28,7 +28,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Title -->
-    <title>Mates y termos Stanley - Tienda en línea</title>
+    <title>MATERMO.DIBATT - Tienda en línea</title>
 </head>
 
 <body id="inicio">
@@ -48,15 +48,15 @@
                 <li class="navbar-item dropdown">
                     <a class="navbar-item-link dropbtn">Termos</a>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#termo1">De 1LT</a>
-                        <a href="#termo2">De 1.3LT</a>
+                        <a href="./pages/termos.html">De 1LT</a>
+                        <a href="./pages/termos13.html">De 1.3LT</a>
                     </div>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-item-link" href="#botellas">Botellas</a>
+                    <a class="navbar-item-link" href="./pages/botellas.html">Botellas</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-item-link" href="#mate">Mates</a>
+                    <a class="navbar-item-link" href="./pages/mates.html">Mates</a>
                 </li>
                 <button id="dark-mode-toggle">
                     <i class="bi bi-sun" id="dark-mode-icon"></i>
@@ -126,22 +126,30 @@
                     <i class="bi bi-facebook"></i>
                 </a>
             </div>
-            <h2 class="titulos" id="termo1">TERMOS 1LT</h2>
-            <div class="container" id="contenedorTermos"></div>
-            <h2 class="titulos" id="termo2">TERMOS 1.3LT</h2>
-            <div>
-                <h3 class="titulo-sin-stock">¡SIN STOCK!</h3>
-            </div>
-            <h2 class="titulos" id="botellas">BOTELLAS</h2>
-            <div class="container" id="contenedorBotellas"></div>
-            <h2 class="titulos" id="mate">MATES</h2>
-            <div class="container" id="contenedorMates"></div>
+        </section>
+        <section class="container-productos">
+            <a href="./pages/termos.html" id="termos1l">
+                <h3>TERMOS 1L</h3>
+            </a>
+            <a href="./pages/termos13.html" id="termos13l">
+                <h3>TERMOS 1.3L</h3>
+            </a>
+            <a href="./pages/botellas.html" id="botellas">
+                <h3>BOTELLAS</h3>
+            </a>
+            <a href="./pages/mates.html" id="mates">
+                <h3>MATES</h3>
+            </a>
         </section>
     </main>
     <!-- Fin main -->
 
     <!-- Comienzo footer -->
-    <footer id="contacto"></footer>
+    <footer id="contacto">
+        <a href="https://www.instagram.com/matermo.dibatt/" target="_blank">
+            <p>@matermo.dibatt</p>
+        </a>
+    </footer>
     <!-- Fin footer -->
 
     <!-- Librerías -->
@@ -150,11 +158,6 @@
     <script>
         AOS.init();
     </script>
-
-    <!-- Script productos-->
-    <script src="./scripts/termos.js"></script>
-    <script src="./scripts/botellas.js"></script>
-    <script src="./scripts/mates.js"></script>
 
     <!-- Script animaciones y otros-->
     <script src="./scripts/darkmode.js"></script>

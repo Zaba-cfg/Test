@@ -2,7 +2,7 @@
 let contenedorMates = document.getElementById("contenedorMates")
 
 // Hacer la solicitud utilizando fetch para obtener el archivo JSON de productos
-fetch("./products/mates.json")
+fetch("../products/mates.json")
    .then(function (response) {
       return response.json()
    })

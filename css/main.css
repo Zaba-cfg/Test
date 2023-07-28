@@ -83,32 +83,28 @@
 
 .bi-facebook {
   color: var(--clr-text);
-  font-size: 1.5rem;
-  transition: all .2s; }
+  font-size: 1.5rem; }
 
 .bi-tiktok:hover {
   color: violet; }
 
 .bi-tiktok {
   color: var(--clr-text);
-  font-size: 1.5rem;
-  transition: all .2s; }
+  font-size: 1.5rem; }
 
 .bi-instagram:hover {
   color: lightsalmon; }
 
 .bi-instagram {
   color: var(--clr-text);
-  font-size: 1.5rem;
-  transition: all .2s; }
+  font-size: 1.5rem; }
 
 .bi-whatsapp:hover {
   color: lightgreen; }
 
 .bi-whatsapp {
   color: var(--clr-text);
-  font-size: 1.5rem;
-  transition: all .2s; }
+  font-size: 1.5rem; }
 
 .container {
   display: flex;
@@ -295,7 +291,12 @@ main section .container-carousel {
 
 footer {
   background-color: var(--clr-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 10vh; }
+  footer p {
+    color: var(--clr-primary); }
 
 * {
   margin: 0;
@@ -417,6 +418,37 @@ main section .container-redes {
     main section .container-redes a i {
       font-size: 2.5rem; }
 
+main .container-productos {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: grid;
+  gap: 8rem;
+  justify-content: center;
+  grid-template-columns: 16rem 16rem;
+  grid-template-rows: 16rem 16rem;
+  grid-template-areas: "a b" "c d"; }
+  main .container-productos #termos1l {
+    grid-area: a; }
+  main .container-productos #termos13l {
+    grid-area: b; }
+  main .container-productos #botellas {
+    grid-area: c; }
+  main .container-productos #mates {
+    grid-area: d; }
+  main .container-productos #termos1l,
+  main .container-productos #termos13l,
+  main .container-productos #botellas,
+  main .container-productos #mates {
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-background);
+    padding: 20px;
+    border-radius: 20%;
+    color: var(--clr-text); }
+
 main section #btn-scroll-home {
   display: flex;
   justify-content: center;
@@ -430,7 +462,8 @@ main section #btn-scroll-home {
   background-color: var(--clr-light);
   bottom: 0;
   right: 0;
-  margin: 2rem; }
+  margin-bottom: 16px;
+  margin-right: 16px; }
   main section #btn-scroll-home i {
     display: flex;
     justify-content: center;
@@ -500,6 +533,12 @@ main section #btn-scroll-home {
         display: flex !important;
         justify-content: space-around;
         align-items: center; }
+      html body main .container-productos {
+        gap: 5rem;
+        margin: 0 0 3rem 0;
+        grid-template-columns: 16rem;
+        grid-template-rows: 16rem 16rem 16rem 16rem;
+        grid-template-areas: "a" "b" "c" "d"; }
       html body main section .typewriter {
         height: 12rem;
         font-size: 2.5rem; }

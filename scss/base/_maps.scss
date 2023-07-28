@@ -42,6 +42,5 @@ $color in $colores_icons {
     .#{$color_icon} {
         color: var(--clr-text);
         font-size: 1.5rem;
-        transition: all .2s;
     }
 }
