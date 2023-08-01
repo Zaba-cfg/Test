@@ -130,8 +130,7 @@
                         position: relative;
                         display: flex;
                         scroll-snap-type: x mandatory;
-                        margin-bottom: 4rem;
-                        margin-top: 4rem;
+                        margin: 4rem 0 4rem 0;
                         background-color: var(--clr-background);
                         border-top: groove var(--clr-background) 10px;
                         border-bottom: groove var(--clr-background) 10px;

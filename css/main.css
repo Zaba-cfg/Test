@@ -130,10 +130,8 @@ main section div .titulo-sin-stock {
   background-color: var(--clr-light);
   font-size: 3rem;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
+  padding: 2rem 0 2rem 0;
+  margin: 3rem 0 3rem 0; }
 
 main section .container {
   gap: 2rem; }
@@ -168,8 +166,7 @@ main section .container {
           font-size: 1.7rem;
           background-color: var(--clr-background);
           padding: .5rem;
-          margin-left: 5px;
-          margin-top: 5px;
+          margin: 5px 0 0 5px;
           border-bottom-right-radius: 1rem; }
         main section .container .container-cards .card .image img {
           width: 100%;
@@ -218,8 +215,7 @@ main section .container-carousel {
     background-color: var(--clr-background);
     max-width: 1200px;
     position: relative;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem 0 5rem 0;
     border-radius: 1rem;
     padding: 3rem; }
     main section .container-carousel .wrapper i {
@@ -291,10 +287,13 @@ main section .container-carousel {
 
 footer {
   background-color: var(--clr-background);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 10vh; }
+  align-items: center; }
   footer p {
     color: var(--clr-primary); }
 
@@ -310,7 +309,12 @@ html {
   --_g: #0000 52%, #364e44 54% 57%, #0000 59%;
   background: radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2), radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0, radial-gradient(farthest-side at 133.33% 50%, var(--_g)), radial-gradient(farthest-side at 50% -33.33%, var(--_g)), #67917A;
   background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 60px; }
 
 a,
 a:link,
@@ -419,8 +423,7 @@ main section .container-redes {
       font-size: 2.5rem; }
 
 main .container-productos {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin: 10rem 0 10rem 0;
   display: grid;
   gap: 8rem;
   justify-content: center;
@@ -462,8 +465,7 @@ main section #btn-scroll-home {
   background-color: var(--clr-light);
   bottom: 0;
   right: 0;
-  margin-bottom: 16px;
-  margin-right: 16px; }
+  margin: 0 16px 16px 0; }
   main section #btn-scroll-home i {
     display: flex;
     justify-content: center;
@@ -553,8 +555,7 @@ main section #btn-scroll-home {
         position: relative;
         display: flex;
         scroll-snap-type: x mandatory;
-        margin-bottom: 4rem;
-        margin-top: 4rem;
+        margin: 4rem 0 4rem 0;
         background-color: var(--clr-background);
         border-top: groove var(--clr-background) 10px;
         border-bottom: groove var(--clr-background) 10px; }

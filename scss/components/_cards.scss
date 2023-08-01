@@ -27,10 +27,8 @@ main {
                 background-color: var(--clr-light);
                 font-size: 3rem;
                 text-align: center;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-                margin-top: 3rem;
-                margin-bottom: 3rem;
+                padding: 2rem 0 2rem 0;
+                margin: 3rem 0 3rem 0;
             }
         }
 
@@ -73,8 +71,7 @@ main {
                                 font-size: 1.7rem;
                                 background-color: var(--clr-background);
                                 padding: .5rem;
-                                margin-left: 5px;
-                                margin-top: 5px;
+                                margin: 5px 0 0 5px;
                                 border-bottom-right-radius: 1rem;
                             }
                         }

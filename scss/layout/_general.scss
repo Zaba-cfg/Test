@@ -26,6 +26,12 @@ html {
     background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
 
     scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px
 }
 
 // Reset de estilos en links y listas
