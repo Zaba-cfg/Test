@@ -82,6 +82,7 @@
   color: #77c8e3; }
 
 .bi-facebook {
+  transition: all .15s linear;
   color: var(--clr-text);
   font-size: 1.5rem; }
 
@@ -89,6 +90,7 @@
   color: violet; }
 
 .bi-tiktok {
+  transition: all .15s linear;
   color: var(--clr-text);
   font-size: 1.5rem; }
 
@@ -96,6 +98,7 @@
   color: lightsalmon; }
 
 .bi-instagram {
+  transition: all .15s linear;
   color: var(--clr-text);
   font-size: 1.5rem; }
 
@@ -103,6 +106,7 @@
   color: lightgreen; }
 
 .bi-whatsapp {
+  transition: all .15s linear;
   color: var(--clr-text);
   font-size: 1.5rem; }
 
@@ -310,11 +314,10 @@ html {
   background: radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2), radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0, radial-gradient(farthest-side at 133.33% 50%, var(--_g)), radial-gradient(farthest-side at 50% -33.33%, var(--_g)), #67917A;
   background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
   scroll-behavior: smooth;
-  position: relative;
-  min-height: 100%; }
+  position: relative; }
 
 body {
-  margin-bottom: 60px; }
+  margin-bottom: 100px; }
 
 a,
 a:link,
@@ -341,7 +344,7 @@ button {
 
 i,
 button {
-  transition: transform 0.1s linear; }
+  transition: transform .1s linear; }
 
 i:active,
 button:active {
@@ -450,7 +453,12 @@ main .container-productos {
     background-color: var(--clr-background);
     padding: 20px;
     border-radius: 20%;
-    color: var(--clr-text); }
+    color: var(--clr-text);
+    transition: transform .1s linear; }
+  main .container-productos a:hover {
+    transform: scale(0.95); }
+    main .container-productos a:hover h3 {
+      color: #67917a; }
 
 main section #btn-scroll-home {
   display: flex;
