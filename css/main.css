@@ -219,7 +219,7 @@ main section .container-carousel {
     background-color: var(--clr-background);
     max-width: 1200px;
     position: relative;
-    margin: 5rem 0 5rem 0;
+    margin: 10rem 0 5rem 0;
     border-radius: 1rem;
     padding: 3rem; }
     main section .container-carousel .wrapper i {
@@ -313,11 +313,12 @@ html {
   --_g: #0000 52%, #364e44 54% 57%, #0000 59%;
   background: radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2), radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0, radial-gradient(farthest-side at 133.33% 50%, var(--_g)), radial-gradient(farthest-side at 50% -33.33%, var(--_g)), #67917A;
   background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
-  scroll-behavior: smooth;
-  position: relative; }
+  scroll-behavior: smooth; }
 
 body {
-  margin-bottom: 100px; }
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 4em; }
 
 a,
 a:link,
