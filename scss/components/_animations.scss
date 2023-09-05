@@ -11,3 +11,17 @@
         transform: translateY(0);
     }
 }
+
+@keyframes arrowHighlight {
+    0% {
+        color: var(--clr-primary);
+    }
+
+    50% {
+        color: var(--clr-hover-text)
+    }
+
+    100% {
+        color: var(--clr-primary);
+    }
+}
